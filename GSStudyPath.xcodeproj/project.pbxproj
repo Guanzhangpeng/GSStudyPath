@@ -13,6 +13,10 @@
 		19D479BE212D6D7100944007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D479BD212D6D7100944007 /* Assets.xcassets */; };
 		19D479C1212D6D7100944007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D479BF212D6D7100944007 /* LaunchScreen.storyboard */; };
 		19D479C4212D6D7100944007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479C3212D6D7100944007 /* main.m */; };
+		19D479CD212D6E1100944007 /* country.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19D479CC212D6E1100944007 /* country.txt */; };
+		19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479D6212D7FE100944007 /* GSCountryModal.m */; };
+		19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479DF212E5D6400944007 /* GSNormalSearchVC.m */; };
+		19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479E0212E5D6400944007 /* GSSearchResultVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		19D479C0212D6D7100944007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D479C2212D6D7100944007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19D479C3212D6D7100944007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19D479CC212D6E1100944007 /* country.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = country.txt; sourceTree = "<group>"; };
+		19D479D5212D7FE100944007 /* GSCountryModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCountryModal.h; sourceTree = "<group>"; };
+		19D479D6212D7FE100944007 /* GSCountryModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCountryModal.m; sourceTree = "<group>"; };
+		19D479DF212E5D6400944007 /* GSNormalSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNormalSearchVC.m; sourceTree = "<group>"; };
+		19D479E0212E5D6400944007 /* GSSearchResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSearchResultVC.m; sourceTree = "<group>"; };
+		19D479E1212E5D6400944007 /* GSSearchResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSearchResultVC.h; sourceTree = "<group>"; };
+		19D479E2212E5D6400944007 /* GSNormalSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNormalSearchVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 		19D479B3212D6D7000944007 /* GSStudyPath */ = {
 			isa = PBXGroup;
 			children = (
+				19D479D1212D7FE100944007 /* UISearchController */,
+				19D479CB212D6DC900944007 /* Sources */,
 				19D479B4212D6D7000944007 /* AppDelegate.h */,
 				19D479B5212D6D7000944007 /* AppDelegate.m */,
 				19D479B7212D6D7000944007 /* ViewController.h */,
@@ -69,6 +82,67 @@
 				19D479C3212D6D7100944007 /* main.m */,
 			);
 			path = GSStudyPath;
+			sourceTree = "<group>";
+		};
+		19D479CB212D6DC900944007 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				19D479CC212D6E1100944007 /* country.txt */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		19D479D1212D7FE100944007 /* UISearchController */ = {
+			isa = PBXGroup;
+			children = (
+				19D479D4212D7FE100944007 /* Modal */,
+				19D479D2212D7FE100944007 /* Controller */,
+			);
+			path = UISearchController;
+			sourceTree = "<group>";
+		};
+		19D479D2212D7FE100944007 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19D479E6212E5D8D00944007 /* 京东搜索框 */,
+				19D479E5212E5D8D00944007 /* 美团地址搜索框 */,
+				19D479DE212E5D6400944007 /* 基本使用 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19D479D4212D7FE100944007 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				19D479D5212D7FE100944007 /* GSCountryModal.h */,
+				19D479D6212D7FE100944007 /* GSCountryModal.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		19D479DE212E5D6400944007 /* 基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				19D479E2212E5D6400944007 /* GSNormalSearchVC.h */,
+				19D479DF212E5D6400944007 /* GSNormalSearchVC.m */,
+				19D479E1212E5D6400944007 /* GSSearchResultVC.h */,
+				19D479E0212E5D6400944007 /* GSSearchResultVC.m */,
+			);
+			path = "基本使用";
+			sourceTree = "<group>";
+		};
+		19D479E5212E5D8D00944007 /* 美团地址搜索框 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "美团地址搜索框";
+			sourceTree = "<group>";
+		};
+		19D479E6212E5D8D00944007 /* 京东搜索框 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "京东搜索框";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D479C1212D6D7100944007 /* LaunchScreen.storyboard in Resources */,
+				19D479CD212D6E1100944007 /* country.txt in Resources */,
 				19D479BE212D6D7100944007 /* Assets.xcassets in Resources */,
 				19D479BC212D6D7000944007 /* Main.storyboard in Resources */,
 			);
@@ -143,7 +218,10 @@
 			files = (
 				19D479B9212D6D7000944007 /* ViewController.m in Sources */,
 				19D479C4212D6D7100944007 /* main.m in Sources */,
+				19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */,
 				19D479B6212D6D7000944007 /* AppDelegate.m in Sources */,
+				19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */,
+				19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GSStudyPath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GSStudyPath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
