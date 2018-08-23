@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GSNormalSearchVC.h"
+#import "GSTableViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,7 +20,8 @@
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    GSNormalSearchVC *vc = [[GSNormalSearchVC alloc] init];
+//    GSNormalSearchVC *vc = [[GSNormalSearchVC alloc] init];
+    GSTableViewController *vc = [[GSTableViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

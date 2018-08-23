@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  GSStudyPath
+//
+//  Created by 管章鹏 on 2018/8/23.
+//  Copyright © 2018年 管章鹏. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIView+Size.h"
+// 随机色
+#define GSRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
+#define GSColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define SCREENSIZE [[UIScreen mainScreen] bounds].size
+
+// iPhone X
+#define  GS_iPhoneX (SCREENSIZE.width == 375.f && SCREENSIZE.height == 812.f ? YES : NO)
+#endif /* PrefixHeader_pch */

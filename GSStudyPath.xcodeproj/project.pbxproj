@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A4EC63627CA896C5D5232F /* libPods-GSStudyPath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C537F39EA29690E137ED8E /* libPods-GSStudyPath.a */; };
 		19D479B6212D6D7000944007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479B5212D6D7000944007 /* AppDelegate.m */; };
 		19D479B9212D6D7000944007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479B8212D6D7000944007 /* ViewController.m */; };
 		19D479BC212D6D7000944007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D479BA212D6D7000944007 /* Main.storyboard */; };
@@ -17,6 +18,31 @@
 		19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479D6212D7FE100944007 /* GSCountryModal.m */; };
 		19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479DF212E5D6400944007 /* GSNormalSearchVC.m */; };
 		19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479E0212E5D6400944007 /* GSSearchResultVC.m */; };
+		19D47A13212E938100944007 /* GSLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479EA212E938000944007 /* GSLineLayout.m */; };
+		19D47A14212E938100944007 /* GSStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479EB212E938000944007 /* GSStackLayout.m */; };
+		19D47A15212E938100944007 /* GSCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479EC212E938000944007 /* GSCircleLayout.m */; };
+		19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479ED212E938000944007 /* GSWaterFlowLayout.m */; };
+		19D47A17212E938100944007 /* GSDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F3212E938000944007 /* GSDateVC.m */; };
+		19D47A18212E938100944007 /* GSWaterFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F5212E938000944007 /* GSWaterFlowVC.m */; };
+		19D47A19212E938100944007 /* GSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F8212E938000944007 /* GSTableViewController.m */; };
+		19D47A1A212E938100944007 /* GSInfiniteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479FA212E938000944007 /* GSInfiniteVC.m */; };
+		19D47A1B212E938100944007 /* GSCustomLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479FC212E938000944007 /* GSCustomLayoutVC.m */; };
+		19D47A1C212E938100944007 /* GSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A00212E938000944007 /* GSDate.m */; };
+		19D47A1D212E938100944007 /* GSNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A01212E938000944007 /* GSNews.m */; };
+		19D47A1E212E938100944007 /* GSShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A03212E938000944007 /* GSShop.m */; };
+		19D47A1F212E938100944007 /* GSShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A06212E938000944007 /* GSShopCell.xib */; };
+		19D47A20212E938100944007 /* GSImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A07212E938000944007 /* GSImageCell.m */; };
+		19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A08212E938000944007 /* GSDateHeaderView.m */; };
+		19D47A22212E938100944007 /* GSDateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A09212E938000944007 /* GSDateHeaderView.xib */; };
+		19D47A23212E938100944007 /* GSNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A0A212E938000944007 /* GSNewsCell.m */; };
+		19D47A24212E938100944007 /* GSShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A0B212E938000944007 /* GSShopCell.m */; };
+		19D47A25212E938100944007 /* GSDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A0E212E938000944007 /* GSDateCell.m */; };
+		19D47A26212E938100944007 /* GSDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A10212E938000944007 /* GSDateCell.xib */; };
+		19D47A27212E938100944007 /* GSImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A12212E938000944007 /* GSImageCell.xib */; };
+		19D47A2C212E96A600944007 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A2B212E96A600944007 /* UIView+Size.m */; };
+		19D47A30212E9A2900944007 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A2F212E9A2900944007 /* 1.plist */; };
+		19D47A33212E9DDC00944007 /* GSInfiniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A32212E9DDC00944007 /* GSInfiniteView.m */; };
+		19D47A37212EA1B800944007 /* GSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A36212EA1B800944007 /* GSProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +63,55 @@
 		19D479E0212E5D6400944007 /* GSSearchResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSearchResultVC.m; sourceTree = "<group>"; };
 		19D479E1212E5D6400944007 /* GSSearchResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSearchResultVC.h; sourceTree = "<group>"; };
 		19D479E2212E5D6400944007 /* GSNormalSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNormalSearchVC.h; sourceTree = "<group>"; };
+		19D479E7212E615F00944007 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		19D479EA212E938000944007 /* GSLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSLineLayout.m; sourceTree = "<group>"; };
+		19D479EB212E938000944007 /* GSStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSStackLayout.m; sourceTree = "<group>"; };
+		19D479EC212E938000944007 /* GSCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCircleLayout.m; sourceTree = "<group>"; };
+		19D479ED212E938000944007 /* GSWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWaterFlowLayout.m; sourceTree = "<group>"; };
+		19D479EE212E938000944007 /* GSLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSLineLayout.h; sourceTree = "<group>"; };
+		19D479EF212E938000944007 /* GSCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCircleLayout.h; sourceTree = "<group>"; };
+		19D479F0212E938000944007 /* GSStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSStackLayout.h; sourceTree = "<group>"; };
+		19D479F1212E938000944007 /* GSWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowLayout.h; sourceTree = "<group>"; };
+		19D479F3212E938000944007 /* GSDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateVC.m; sourceTree = "<group>"; };
+		19D479F4212E938000944007 /* GSInfiniteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSInfiniteVC.h; sourceTree = "<group>"; };
+		19D479F5212E938000944007 /* GSWaterFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWaterFlowVC.m; sourceTree = "<group>"; };
+		19D479F6212E938000944007 /* GSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewController.h; sourceTree = "<group>"; };
+		19D479F7212E938000944007 /* GSCustomLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCustomLayoutVC.h; sourceTree = "<group>"; };
+		19D479F8212E938000944007 /* GSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewController.m; sourceTree = "<group>"; };
+		19D479F9212E938000944007 /* GSWaterFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowVC.h; sourceTree = "<group>"; };
+		19D479FA212E938000944007 /* GSInfiniteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteVC.m; sourceTree = "<group>"; };
+		19D479FB212E938000944007 /* GSDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateVC.h; sourceTree = "<group>"; };
+		19D479FC212E938000944007 /* GSCustomLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCustomLayoutVC.m; sourceTree = "<group>"; };
+		19D479FE212E938000944007 /* GSNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNews.h; sourceTree = "<group>"; };
+		19D479FF212E938000944007 /* GSShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSShop.h; sourceTree = "<group>"; };
+		19D47A00212E938000944007 /* GSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDate.m; sourceTree = "<group>"; };
+		19D47A01212E938000944007 /* GSNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNews.m; sourceTree = "<group>"; };
+		19D47A02212E938000944007 /* GSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDate.h; sourceTree = "<group>"; };
+		19D47A03212E938000944007 /* GSShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSShop.m; sourceTree = "<group>"; };
+		19D47A05212E938000944007 /* GSDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateCell.h; sourceTree = "<group>"; };
+		19D47A06212E938000944007 /* GSShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSShopCell.xib; sourceTree = "<group>"; };
+		19D47A07212E938000944007 /* GSImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSImageCell.m; sourceTree = "<group>"; };
+		19D47A08212E938000944007 /* GSDateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateHeaderView.m; sourceTree = "<group>"; };
+		19D47A09212E938000944007 /* GSDateHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSDateHeaderView.xib; sourceTree = "<group>"; };
+		19D47A0A212E938000944007 /* GSNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNewsCell.m; sourceTree = "<group>"; };
+		19D47A0B212E938000944007 /* GSShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSShopCell.m; sourceTree = "<group>"; };
+		19D47A0C212E938000944007 /* GSDateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateHeaderView.h; sourceTree = "<group>"; };
+		19D47A0D212E938000944007 /* GSImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSImageCell.h; sourceTree = "<group>"; };
+		19D47A0E212E938000944007 /* GSDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateCell.m; sourceTree = "<group>"; };
+		19D47A0F212E938000944007 /* GSShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSShopCell.h; sourceTree = "<group>"; };
+		19D47A10212E938000944007 /* GSDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSDateCell.xib; sourceTree = "<group>"; };
+		19D47A11212E938000944007 /* GSNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNewsCell.h; sourceTree = "<group>"; };
+		19D47A12212E938000944007 /* GSImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSImageCell.xib; sourceTree = "<group>"; };
+		19D47A2A212E96A600944007 /* UIView+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
+		19D47A2B212E96A600944007 /* UIView+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
+		19D47A2F212E9A2900944007 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		19D47A31212E9DDC00944007 /* GSInfiniteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSInfiniteView.h; sourceTree = "<group>"; };
+		19D47A32212E9DDC00944007 /* GSInfiniteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteView.m; sourceTree = "<group>"; };
+		19D47A35212EA1B800944007 /* GSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSProxy.h; sourceTree = "<group>"; };
+		19D47A36212EA1B800944007 /* GSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSProxy.m; sourceTree = "<group>"; };
+		275B070A2CD2FD923A6DF44F /* Pods-GSStudyPath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSStudyPath.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath.debug.xcconfig"; sourceTree = "<group>"; };
+		2CDB8E5CD818334BF5CD6C51 /* Pods-GSStudyPath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSStudyPath.release.xcconfig"; path = "Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath.release.xcconfig"; sourceTree = "<group>"; };
+		A9C537F39EA29690E137ED8E /* libPods-GSStudyPath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSStudyPath.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A4EC63627CA896C5D5232F /* libPods-GSStudyPath.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +131,8 @@
 			children = (
 				19D479B3212D6D7000944007 /* GSStudyPath */,
 				19D479B2212D6D7000944007 /* Products */,
+				54381615838135A311533EA7 /* Pods */,
+				F16831D9AF023B1901C1E86F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +147,8 @@
 		19D479B3212D6D7000944007 /* GSStudyPath */ = {
 			isa = PBXGroup;
 			children = (
+				19D47A28212E969400944007 /* Tools */,
+				19D479E8212E938000944007 /* UICollectionView */,
 				19D479D1212D7FE100944007 /* UISearchController */,
 				19D479CB212D6DC900944007 /* Sources */,
 				19D479B4212D6D7000944007 /* AppDelegate.h */,
@@ -80,6 +160,7 @@
 				19D479BF212D6D7100944007 /* LaunchScreen.storyboard */,
 				19D479C2212D6D7100944007 /* Info.plist */,
 				19D479C3212D6D7100944007 /* main.m */,
+				19D479E7212E615F00944007 /* PrefixHeader.pch */,
 			);
 			path = GSStudyPath;
 			sourceTree = "<group>";
@@ -87,6 +168,7 @@
 		19D479CB212D6DC900944007 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				19D47A2F212E9A2900944007 /* 1.plist */,
 				19D479CC212D6E1100944007 /* country.txt */,
 			);
 			path = Sources;
@@ -145,6 +227,129 @@
 			path = "京东搜索框";
 			sourceTree = "<group>";
 		};
+		19D479E8212E938000944007 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				19D479E9212E938000944007 /* Layout */,
+				19D479F2212E938000944007 /* Controller */,
+				19D479FD212E938000944007 /* Model */,
+				19D47A04212E938000944007 /* View */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		19D479E9212E938000944007 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				19D479EA212E938000944007 /* GSLineLayout.m */,
+				19D479EB212E938000944007 /* GSStackLayout.m */,
+				19D479EC212E938000944007 /* GSCircleLayout.m */,
+				19D479ED212E938000944007 /* GSWaterFlowLayout.m */,
+				19D479EE212E938000944007 /* GSLineLayout.h */,
+				19D479EF212E938000944007 /* GSCircleLayout.h */,
+				19D479F0212E938000944007 /* GSStackLayout.h */,
+				19D479F1212E938000944007 /* GSWaterFlowLayout.h */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		19D479F2212E938000944007 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19D479F6212E938000944007 /* GSTableViewController.h */,
+				19D479F8212E938000944007 /* GSTableViewController.m */,
+				19D479F4212E938000944007 /* GSInfiniteVC.h */,
+				19D479FA212E938000944007 /* GSInfiniteVC.m */,
+				19D479FB212E938000944007 /* GSDateVC.h */,
+				19D479F3212E938000944007 /* GSDateVC.m */,
+				19D479F9212E938000944007 /* GSWaterFlowVC.h */,
+				19D479F5212E938000944007 /* GSWaterFlowVC.m */,
+				19D479F7212E938000944007 /* GSCustomLayoutVC.h */,
+				19D479FC212E938000944007 /* GSCustomLayoutVC.m */,
+				19D47A31212E9DDC00944007 /* GSInfiniteView.h */,
+				19D47A32212E9DDC00944007 /* GSInfiniteView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19D479FD212E938000944007 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19D479FE212E938000944007 /* GSNews.h */,
+				19D479FF212E938000944007 /* GSShop.h */,
+				19D47A00212E938000944007 /* GSDate.m */,
+				19D47A01212E938000944007 /* GSNews.m */,
+				19D47A02212E938000944007 /* GSDate.h */,
+				19D47A03212E938000944007 /* GSShop.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19D47A04212E938000944007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19D47A05212E938000944007 /* GSDateCell.h */,
+				19D47A06212E938000944007 /* GSShopCell.xib */,
+				19D47A07212E938000944007 /* GSImageCell.m */,
+				19D47A08212E938000944007 /* GSDateHeaderView.m */,
+				19D47A09212E938000944007 /* GSDateHeaderView.xib */,
+				19D47A11212E938000944007 /* GSNewsCell.h */,
+				19D47A0A212E938000944007 /* GSNewsCell.m */,
+				19D47A0B212E938000944007 /* GSShopCell.m */,
+				19D47A0C212E938000944007 /* GSDateHeaderView.h */,
+				19D47A0D212E938000944007 /* GSImageCell.h */,
+				19D47A0E212E938000944007 /* GSDateCell.m */,
+				19D47A0F212E938000944007 /* GSShopCell.h */,
+				19D47A10212E938000944007 /* GSDateCell.xib */,
+				19D47A12212E938000944007 /* GSImageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19D47A28212E969400944007 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				19D47A34212EA1B800944007 /* Modal */,
+				19D47A29212E969400944007 /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		19D47A29212E969400944007 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				19D47A2A212E96A600944007 /* UIView+Size.h */,
+				19D47A2B212E96A600944007 /* UIView+Size.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		19D47A34212EA1B800944007 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				19D47A35212EA1B800944007 /* GSProxy.h */,
+				19D47A36212EA1B800944007 /* GSProxy.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		54381615838135A311533EA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				275B070A2CD2FD923A6DF44F /* Pods-GSStudyPath.debug.xcconfig */,
+				2CDB8E5CD818334BF5CD6C51 /* Pods-GSStudyPath.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F16831D9AF023B1901C1E86F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C537F39EA29690E137ED8E /* libPods-GSStudyPath.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19D479C7212D6D7100944007 /* Build configuration list for PBXNativeTarget "GSStudyPath" */;
 			buildPhases = (
+				10803921013C0D959204C3DA /* [CP] Check Pods Manifest.lock */,
 				19D479AD212D6D7000944007 /* Sources */,
 				19D479AE212D6D7000944007 /* Frameworks */,
 				19D479AF212D6D7000944007 /* Resources */,
+				6A1C98E89CB3E35F1126EDBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,8 +409,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D47A30212E9A2900944007 /* 1.plist in Resources */,
 				19D479C1212D6D7100944007 /* LaunchScreen.storyboard in Resources */,
+				19D47A22212E938100944007 /* GSDateHeaderView.xib in Resources */,
+				19D47A26212E938100944007 /* GSDateCell.xib in Resources */,
 				19D479CD212D6E1100944007 /* country.txt in Resources */,
+				19D47A1F212E938100944007 /* GSShopCell.xib in Resources */,
+				19D47A27212E938100944007 /* GSImageCell.xib in Resources */,
 				19D479BE212D6D7100944007 /* Assets.xcassets in Resources */,
 				19D479BC212D6D7000944007 /* Main.storyboard in Resources */,
 			);
@@ -211,17 +423,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10803921013C0D959204C3DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GSStudyPath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1C98E89CB3E35F1126EDBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19D479AD212D6D7000944007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D47A18212E938100944007 /* GSWaterFlowVC.m in Sources */,
+				19D47A14212E938100944007 /* GSStackLayout.m in Sources */,
 				19D479B9212D6D7000944007 /* ViewController.m in Sources */,
+				19D47A1B212E938100944007 /* GSCustomLayoutVC.m in Sources */,
+				19D47A1D212E938100944007 /* GSNews.m in Sources */,
+				19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */,
+				19D47A23212E938100944007 /* GSNewsCell.m in Sources */,
 				19D479C4212D6D7100944007 /* main.m in Sources */,
+				19D47A20212E938100944007 /* GSImageCell.m in Sources */,
+				19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */,
+				19D47A37212EA1B800944007 /* GSProxy.m in Sources */,
 				19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */,
 				19D479B6212D6D7000944007 /* AppDelegate.m in Sources */,
+				19D47A19212E938100944007 /* GSTableViewController.m in Sources */,
+				19D47A33212E9DDC00944007 /* GSInfiniteView.m in Sources */,
 				19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */,
+				19D47A15212E938100944007 /* GSCircleLayout.m in Sources */,
+				19D47A2C212E96A600944007 /* UIView+Size.m in Sources */,
+				19D47A1C212E938100944007 /* GSDate.m in Sources */,
+				19D47A1E212E938100944007 /* GSShop.m in Sources */,
+				19D47A13212E938100944007 /* GSLineLayout.m in Sources */,
+				19D47A1A212E938100944007 /* GSInfiniteVC.m in Sources */,
 				19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */,
+				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
+				19D47A17212E938100944007 /* GSDateVC.m in Sources */,
+				19D47A24212E938100944007 /* GSShopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +630,11 @@
 		};
 		19D479C8212D6D7100944007 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275B070A2CD2FD923A6DF44F /* Pods-GSStudyPath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GSStudyPath/PrefixHeader.pch";
 				INFOPLIST_FILE = GSStudyPath/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,9 +649,11 @@
 		};
 		19D479C9212D6D7100944007 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CDB8E5CD818334BF5CD6C51 /* Pods-GSStudyPath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GSStudyPath/PrefixHeader.pch";
 				INFOPLIST_FILE = GSStudyPath/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
