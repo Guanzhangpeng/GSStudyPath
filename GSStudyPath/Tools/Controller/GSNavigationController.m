@@ -8,7 +8,7 @@
 
 #import "GSNavigationController.h"
 
-@interface GSNavigationController ()
+@interface GSNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -21,6 +21,13 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.interactivePopGestureRecognizer.enabled = NO;
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:NSSelectorFromString(@"handleNavigationTransition:")];
+    [self.view addGestureRecognizer:pan];
+    pan.delegate = self;
+}
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    return self.viewControllers.count>1;
 }
 
 @end
