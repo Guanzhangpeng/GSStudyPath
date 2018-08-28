@@ -17,8 +17,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.dataArray = @[@"GSCollectionListVC",@"GSSearchListVC"];
-    self.titleArray = @[@"UICollectionView的使用",@"UISearchController 的使用"];
+    self.dataArray = @[@"GSTableViewListVC",@"GSCollectionListVC",@"GSSearchListVC"];
+    self.titleArray = @[@"UITableView的使用",@"UICollectionView的使用",@"UISearchController 的使用"];
 }
 
 @end

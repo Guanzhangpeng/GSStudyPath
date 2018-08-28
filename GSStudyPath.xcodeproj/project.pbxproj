@@ -9,6 +9,23 @@
 /* Begin PBXBuildFile section */
 		01A4EC63627CA896C5D5232F /* libPods-GSStudyPath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C537F39EA29690E137ED8E /* libPods-GSStudyPath.a */; };
 		1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C934213403E40022ADB5 /* GSIntroductionView.m */; };
+		1934C93821353BEF0022ADB5 /* GSMTAddressMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C93721353BEF0022ADB5 /* GSMTAddressMainVC.m */; };
+		1934C93B21353C1D0022ADB5 /* citydata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1934C93921353C1D0022ADB5 /* citydata.plist */; };
+		1934C93C21353C1D0022ADB5 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1934C93A21353C1D0022ADB5 /* city.plist */; };
+		1934C93F21353C3E0022ADB5 /* GSMTAddressModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C93E21353C3E0022ADB5 /* GSMTAddressModal.m */; };
+		1934C942213540C70022ADB5 /* GSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C941213540C70022ADB5 /* GSSegmentedControl.m */; };
+		1934C9452135416E0022ADB5 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9442135416E0022ADB5 /* UIColor+Utils.m */; };
+		1934C94B213543350022ADB5 /* GSAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C94A213543350022ADB5 /* GSAddressTableView.m */; };
+		1934C95121354DE40022ADB5 /* GSTableViewListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95021354DE40022ADB5 /* GSTableViewListVC.m */; };
+		1934C96021354EA30022ADB5 /* GSCustomLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95421354EA30022ADB5 /* GSCustomLayoutVC.m */; };
+		1934C96121354EA30022ADB5 /* GSDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95621354EA30022ADB5 /* GSDateVC.m */; };
+		1934C96221354EA30022ADB5 /* GSInfiniteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95921354EA30022ADB5 /* GSInfiniteVC.m */; };
+		1934C96321354EA30022ADB5 /* GSInfiniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95C21354EA30022ADB5 /* GSInfiniteView.m */; };
+		1934C96421354EA30022ADB5 /* GSWaterFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95E21354EA30022ADB5 /* GSWaterFlowVC.m */; };
+		1934C96821354F400022ADB5 /* GSCarsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C96721354F400022ADB5 /* GSCarsListVC.m */; };
+		1934C96A21354F680022ADB5 /* cars_total.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1934C96921354F680022ADB5 /* cars_total.plist */; };
+		1934C96D21354FAA0022ADB5 /* GSCarsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C96C21354FAA0022ADB5 /* GSCarsGroup.m */; };
+		1934C97021354FC80022ADB5 /* GSCarModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C96F21354FC80022ADB5 /* GSCarModal.m */; };
 		19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */; };
 		19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA821301F6000BAAF2E /* GSSearchListVC.m */; };
 		19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */; };
@@ -34,32 +51,56 @@
 		19D47A14212E938100944007 /* GSStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479EB212E938000944007 /* GSStackLayout.m */; };
 		19D47A15212E938100944007 /* GSCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479EC212E938000944007 /* GSCircleLayout.m */; };
 		19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479ED212E938000944007 /* GSWaterFlowLayout.m */; };
-		19D47A17212E938100944007 /* GSDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F3212E938000944007 /* GSDateVC.m */; };
-		19D47A18212E938100944007 /* GSWaterFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F5212E938000944007 /* GSWaterFlowVC.m */; };
 		19D47A19212E938100944007 /* GSCollectionListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F8212E938000944007 /* GSCollectionListVC.m */; };
-		19D47A1A212E938100944007 /* GSInfiniteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479FA212E938000944007 /* GSInfiniteVC.m */; };
-		19D47A1B212E938100944007 /* GSCustomLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479FC212E938000944007 /* GSCustomLayoutVC.m */; };
 		19D47A1C212E938100944007 /* GSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A00212E938000944007 /* GSDate.m */; };
-		19D47A1D212E938100944007 /* GSNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A01212E938000944007 /* GSNews.m */; };
 		19D47A1E212E938100944007 /* GSShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A03212E938000944007 /* GSShop.m */; };
 		19D47A1F212E938100944007 /* GSShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A06212E938000944007 /* GSShopCell.xib */; };
 		19D47A20212E938100944007 /* GSImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A07212E938000944007 /* GSImageCell.m */; };
 		19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A08212E938000944007 /* GSDateHeaderView.m */; };
 		19D47A22212E938100944007 /* GSDateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A09212E938000944007 /* GSDateHeaderView.xib */; };
-		19D47A23212E938100944007 /* GSNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A0A212E938000944007 /* GSNewsCell.m */; };
 		19D47A24212E938100944007 /* GSShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A0B212E938000944007 /* GSShopCell.m */; };
 		19D47A25212E938100944007 /* GSDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A0E212E938000944007 /* GSDateCell.m */; };
 		19D47A26212E938100944007 /* GSDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A10212E938000944007 /* GSDateCell.xib */; };
 		19D47A27212E938100944007 /* GSImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A12212E938000944007 /* GSImageCell.xib */; };
 		19D47A2C212E96A600944007 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A2B212E96A600944007 /* UIView+Size.m */; };
 		19D47A30212E9A2900944007 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A2F212E9A2900944007 /* 1.plist */; };
-		19D47A33212E9DDC00944007 /* GSInfiniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A32212E9DDC00944007 /* GSInfiniteView.m */; };
 		19D47A37212EA1B800944007 /* GSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A36212EA1B800944007 /* GSProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1934C933213403E40022ADB5 /* GSIntroductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSIntroductionView.h; sourceTree = "<group>"; };
 		1934C934213403E40022ADB5 /* GSIntroductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSIntroductionView.m; sourceTree = "<group>"; };
+		1934C93621353BEF0022ADB5 /* GSMTAddressMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSMTAddressMainVC.h; sourceTree = "<group>"; };
+		1934C93721353BEF0022ADB5 /* GSMTAddressMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSMTAddressMainVC.m; sourceTree = "<group>"; };
+		1934C93921353C1D0022ADB5 /* citydata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydata.plist; sourceTree = "<group>"; };
+		1934C93A21353C1D0022ADB5 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		1934C93D21353C3E0022ADB5 /* GSMTAddressModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSMTAddressModal.h; sourceTree = "<group>"; };
+		1934C93E21353C3E0022ADB5 /* GSMTAddressModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSMTAddressModal.m; sourceTree = "<group>"; };
+		1934C940213540C70022ADB5 /* GSSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSegmentedControl.h; sourceTree = "<group>"; };
+		1934C941213540C70022ADB5 /* GSSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSSegmentedControl.m; sourceTree = "<group>"; };
+		1934C9432135416E0022ADB5 /* UIColor+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		1934C9442135416E0022ADB5 /* UIColor+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		1934C949213543350022ADB5 /* GSAddressTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAddressTableView.h; sourceTree = "<group>"; };
+		1934C94A213543350022ADB5 /* GSAddressTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressTableView.m; sourceTree = "<group>"; };
+		1934C94F21354DE40022ADB5 /* GSTableViewListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSTableViewListVC.h; sourceTree = "<group>"; };
+		1934C95021354DE40022ADB5 /* GSTableViewListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSTableViewListVC.m; sourceTree = "<group>"; };
+		1934C95321354EA30022ADB5 /* GSCustomLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCustomLayoutVC.h; sourceTree = "<group>"; };
+		1934C95421354EA30022ADB5 /* GSCustomLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCustomLayoutVC.m; sourceTree = "<group>"; };
+		1934C95621354EA30022ADB5 /* GSDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateVC.m; sourceTree = "<group>"; };
+		1934C95721354EA30022ADB5 /* GSDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateVC.h; sourceTree = "<group>"; };
+		1934C95921354EA30022ADB5 /* GSInfiniteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteVC.m; sourceTree = "<group>"; };
+		1934C95A21354EA30022ADB5 /* GSInfiniteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSInfiniteView.h; sourceTree = "<group>"; };
+		1934C95B21354EA30022ADB5 /* GSInfiniteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSInfiniteVC.h; sourceTree = "<group>"; };
+		1934C95C21354EA30022ADB5 /* GSInfiniteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteView.m; sourceTree = "<group>"; };
+		1934C95E21354EA30022ADB5 /* GSWaterFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWaterFlowVC.m; sourceTree = "<group>"; };
+		1934C95F21354EA30022ADB5 /* GSWaterFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowVC.h; sourceTree = "<group>"; };
+		1934C96621354F400022ADB5 /* GSCarsListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCarsListVC.h; sourceTree = "<group>"; };
+		1934C96721354F400022ADB5 /* GSCarsListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCarsListVC.m; sourceTree = "<group>"; };
+		1934C96921354F680022ADB5 /* cars_total.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_total.plist; sourceTree = "<group>"; };
+		1934C96B21354FAA0022ADB5 /* GSCarsGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCarsGroup.h; sourceTree = "<group>"; };
+		1934C96C21354FAA0022ADB5 /* GSCarsGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCarsGroup.m; sourceTree = "<group>"; };
+		1934C96E21354FC80022ADB5 /* GSCarModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCarModal.h; sourceTree = "<group>"; };
+		1934C96F21354FC80022ADB5 /* GSCarModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCarModal.m; sourceTree = "<group>"; };
 		19C08DA421301B9200BAAF2E /* GSBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseTableViewController.h; sourceTree = "<group>"; };
 		19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseTableViewController.m; sourceTree = "<group>"; };
 		19C08DA721301F6000BAAF2E /* GSSearchListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSearchListVC.h; sourceTree = "<group>"; };
@@ -108,20 +149,10 @@
 		19D479EF212E938000944007 /* GSCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCircleLayout.h; sourceTree = "<group>"; };
 		19D479F0212E938000944007 /* GSStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSStackLayout.h; sourceTree = "<group>"; };
 		19D479F1212E938000944007 /* GSWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowLayout.h; sourceTree = "<group>"; };
-		19D479F3212E938000944007 /* GSDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateVC.m; sourceTree = "<group>"; };
-		19D479F4212E938000944007 /* GSInfiniteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSInfiniteVC.h; sourceTree = "<group>"; };
-		19D479F5212E938000944007 /* GSWaterFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWaterFlowVC.m; sourceTree = "<group>"; };
 		19D479F6212E938000944007 /* GSCollectionListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCollectionListVC.h; sourceTree = "<group>"; };
-		19D479F7212E938000944007 /* GSCustomLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCustomLayoutVC.h; sourceTree = "<group>"; };
 		19D479F8212E938000944007 /* GSCollectionListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCollectionListVC.m; sourceTree = "<group>"; };
-		19D479F9212E938000944007 /* GSWaterFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowVC.h; sourceTree = "<group>"; };
-		19D479FA212E938000944007 /* GSInfiniteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteVC.m; sourceTree = "<group>"; };
-		19D479FB212E938000944007 /* GSDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateVC.h; sourceTree = "<group>"; };
-		19D479FC212E938000944007 /* GSCustomLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCustomLayoutVC.m; sourceTree = "<group>"; };
-		19D479FE212E938000944007 /* GSNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNews.h; sourceTree = "<group>"; };
 		19D479FF212E938000944007 /* GSShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSShop.h; sourceTree = "<group>"; };
 		19D47A00212E938000944007 /* GSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDate.m; sourceTree = "<group>"; };
-		19D47A01212E938000944007 /* GSNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNews.m; sourceTree = "<group>"; };
 		19D47A02212E938000944007 /* GSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDate.h; sourceTree = "<group>"; };
 		19D47A03212E938000944007 /* GSShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSShop.m; sourceTree = "<group>"; };
 		19D47A05212E938000944007 /* GSDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateCell.h; sourceTree = "<group>"; };
@@ -129,20 +160,16 @@
 		19D47A07212E938000944007 /* GSImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSImageCell.m; sourceTree = "<group>"; };
 		19D47A08212E938000944007 /* GSDateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateHeaderView.m; sourceTree = "<group>"; };
 		19D47A09212E938000944007 /* GSDateHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSDateHeaderView.xib; sourceTree = "<group>"; };
-		19D47A0A212E938000944007 /* GSNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSNewsCell.m; sourceTree = "<group>"; };
 		19D47A0B212E938000944007 /* GSShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSShopCell.m; sourceTree = "<group>"; };
 		19D47A0C212E938000944007 /* GSDateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateHeaderView.h; sourceTree = "<group>"; };
 		19D47A0D212E938000944007 /* GSImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSImageCell.h; sourceTree = "<group>"; };
 		19D47A0E212E938000944007 /* GSDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateCell.m; sourceTree = "<group>"; };
 		19D47A0F212E938000944007 /* GSShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSShopCell.h; sourceTree = "<group>"; };
 		19D47A10212E938000944007 /* GSDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSDateCell.xib; sourceTree = "<group>"; };
-		19D47A11212E938000944007 /* GSNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSNewsCell.h; sourceTree = "<group>"; };
 		19D47A12212E938000944007 /* GSImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSImageCell.xib; sourceTree = "<group>"; };
 		19D47A2A212E96A600944007 /* UIView+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
 		19D47A2B212E96A600944007 /* UIView+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
 		19D47A2F212E9A2900944007 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
-		19D47A31212E9DDC00944007 /* GSInfiniteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSInfiniteView.h; sourceTree = "<group>"; };
-		19D47A32212E9DDC00944007 /* GSInfiniteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteView.m; sourceTree = "<group>"; };
 		19D47A35212EA1B800944007 /* GSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSProxy.h; sourceTree = "<group>"; };
 		19D47A36212EA1B800944007 /* GSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSProxy.m; sourceTree = "<group>"; };
 		275B070A2CD2FD923A6DF44F /* Pods-GSStudyPath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSStudyPath.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +204,83 @@
 				1934C934213403E40022ADB5 /* GSIntroductionView.m */,
 			);
 			path = "引导页";
+			sourceTree = "<group>";
+		};
+		1934C94C21354D7E0022ADB5 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				1934C94E21354D940022ADB5 /* Controller */,
+				1934C94D21354D930022ADB5 /* Modal */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		1934C94D21354D930022ADB5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				1934C96B21354FAA0022ADB5 /* GSCarsGroup.h */,
+				1934C96C21354FAA0022ADB5 /* GSCarsGroup.m */,
+				1934C96E21354FC80022ADB5 /* GSCarModal.h */,
+				1934C96F21354FC80022ADB5 /* GSCarModal.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		1934C94E21354D940022ADB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1934C96521354F1B0022ADB5 /* 汽车列表-索引 */,
+				1934C94F21354DE40022ADB5 /* GSTableViewListVC.h */,
+				1934C95021354DE40022ADB5 /* GSTableViewListVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1934C95221354EA30022ADB5 /* 自定义布局 */ = {
+			isa = PBXGroup;
+			children = (
+				1934C95321354EA30022ADB5 /* GSCustomLayoutVC.h */,
+				1934C95421354EA30022ADB5 /* GSCustomLayoutVC.m */,
+			);
+			path = "自定义布局";
+			sourceTree = "<group>";
+		};
+		1934C95521354EA30022ADB5 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				1934C95721354EA30022ADB5 /* GSDateVC.h */,
+				1934C95621354EA30022ADB5 /* GSDateVC.m */,
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
+		1934C95821354EA30022ADB5 /* 无限轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				1934C95A21354EA30022ADB5 /* GSInfiniteView.h */,
+				1934C95C21354EA30022ADB5 /* GSInfiniteView.m */,
+				1934C95B21354EA30022ADB5 /* GSInfiniteVC.h */,
+				1934C95921354EA30022ADB5 /* GSInfiniteVC.m */,
+			);
+			path = "无限轮播";
+			sourceTree = "<group>";
+		};
+		1934C95D21354EA30022ADB5 /* 流水布局 */ = {
+			isa = PBXGroup;
+			children = (
+				1934C95E21354EA30022ADB5 /* GSWaterFlowVC.m */,
+				1934C95F21354EA30022ADB5 /* GSWaterFlowVC.h */,
+			);
+			path = "流水布局";
+			sourceTree = "<group>";
+		};
+		1934C96521354F1B0022ADB5 /* 汽车列表-索引 */ = {
+			isa = PBXGroup;
+			children = (
+				1934C96621354F400022ADB5 /* GSCarsListVC.h */,
+				1934C96721354F400022ADB5 /* GSCarsListVC.m */,
+			);
+			path = "汽车列表-索引";
 			sourceTree = "<group>";
 		};
 		19C08DA321301B6E00BAAF2E /* Controller */ = {
@@ -225,6 +329,7 @@
 				19D47A28212E969400944007 /* Tools */,
 				19C08DC52131514200BAAF2E /* Main */,
 				1934C931213401630022ADB5 /* UIScrollView */,
+				1934C94C21354D7E0022ADB5 /* UITableView */,
 				19D479E8212E938000944007 /* UICollectionView */,
 				19D479D1212D7FE100944007 /* UISearchController */,
 				19D479CB212D6DC900944007 /* Sources */,
@@ -243,6 +348,9 @@
 		19D479CB212D6DC900944007 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1934C96921354F680022ADB5 /* cars_total.plist */,
+				1934C93A21353C1D0022ADB5 /* city.plist */,
+				1934C93921353C1D0022ADB5 /* citydata.plist */,
 				19D47A2F212E9A2900944007 /* 1.plist */,
 				19D479CC212D6E1100944007 /* country.txt */,
 			);
@@ -275,6 +383,8 @@
 			children = (
 				19D479D5212D7FE100944007 /* GSCountryModal.h */,
 				19D479D6212D7FE100944007 /* GSCountryModal.m */,
+				1934C93D21353C3E0022ADB5 /* GSMTAddressModal.h */,
+				1934C93E21353C3E0022ADB5 /* GSMTAddressModal.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -293,6 +403,12 @@
 		19D479E5212E5D8D00944007 /* 美团地址搜索框 */ = {
 			isa = PBXGroup;
 			children = (
+				1934C93621353BEF0022ADB5 /* GSMTAddressMainVC.h */,
+				1934C93721353BEF0022ADB5 /* GSMTAddressMainVC.m */,
+				1934C940213540C70022ADB5 /* GSSegmentedControl.h */,
+				1934C941213540C70022ADB5 /* GSSegmentedControl.m */,
+				1934C949213543350022ADB5 /* GSAddressTableView.h */,
+				1934C94A213543350022ADB5 /* GSAddressTableView.m */,
 			);
 			path = "美团地址搜索框";
 			sourceTree = "<group>";
@@ -347,18 +463,12 @@
 		19D479F2212E938000944007 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1934C95D21354EA30022ADB5 /* 流水布局 */,
+				1934C95521354EA30022ADB5 /* 日历 */,
+				1934C95821354EA30022ADB5 /* 无限轮播 */,
+				1934C95221354EA30022ADB5 /* 自定义布局 */,
 				19D479F6212E938000944007 /* GSCollectionListVC.h */,
 				19D479F8212E938000944007 /* GSCollectionListVC.m */,
-				19D479F4212E938000944007 /* GSInfiniteVC.h */,
-				19D479FA212E938000944007 /* GSInfiniteVC.m */,
-				19D479FB212E938000944007 /* GSDateVC.h */,
-				19D479F3212E938000944007 /* GSDateVC.m */,
-				19D479F9212E938000944007 /* GSWaterFlowVC.h */,
-				19D479F5212E938000944007 /* GSWaterFlowVC.m */,
-				19D479F7212E938000944007 /* GSCustomLayoutVC.h */,
-				19D479FC212E938000944007 /* GSCustomLayoutVC.m */,
-				19D47A31212E9DDC00944007 /* GSInfiniteView.h */,
-				19D47A32212E9DDC00944007 /* GSInfiniteView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,12 +476,10 @@
 		19D479FD212E938000944007 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				19D479FE212E938000944007 /* GSNews.h */,
 				19D479FF212E938000944007 /* GSShop.h */,
-				19D47A00212E938000944007 /* GSDate.m */,
-				19D47A01212E938000944007 /* GSNews.m */,
-				19D47A02212E938000944007 /* GSDate.h */,
 				19D47A03212E938000944007 /* GSShop.m */,
+				19D47A02212E938000944007 /* GSDate.h */,
+				19D47A00212E938000944007 /* GSDate.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,8 +492,6 @@
 				19D47A07212E938000944007 /* GSImageCell.m */,
 				19D47A08212E938000944007 /* GSDateHeaderView.m */,
 				19D47A09212E938000944007 /* GSDateHeaderView.xib */,
-				19D47A11212E938000944007 /* GSNewsCell.h */,
-				19D47A0A212E938000944007 /* GSNewsCell.m */,
 				19D47A0B212E938000944007 /* GSShopCell.m */,
 				19D47A0C212E938000944007 /* GSDateHeaderView.h */,
 				19D47A0D212E938000944007 /* GSImageCell.h */,
@@ -412,6 +518,8 @@
 			children = (
 				19D47A2A212E96A600944007 /* UIView+Size.h */,
 				19D47A2B212E96A600944007 /* UIView+Size.m */,
+				1934C9432135416E0022ADB5 /* UIColor+Utils.h */,
+				1934C9442135416E0022ADB5 /* UIColor+Utils.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -503,13 +611,16 @@
 			files = (
 				19D47A30212E9A2900944007 /* 1.plist in Resources */,
 				19D479C1212D6D7100944007 /* LaunchScreen.storyboard in Resources */,
+				1934C96A21354F680022ADB5 /* cars_total.plist in Resources */,
 				19D47A22212E938100944007 /* GSDateHeaderView.xib in Resources */,
 				19D47A26212E938100944007 /* GSDateCell.xib in Resources */,
 				19D479CD212D6E1100944007 /* country.txt in Resources */,
+				1934C93B21353C1D0022ADB5 /* citydata.plist in Resources */,
 				19D47A1F212E938100944007 /* GSShopCell.xib in Resources */,
 				19D47A27212E938100944007 /* GSImageCell.xib in Resources */,
 				19D479BE212D6D7100944007 /* Assets.xcassets in Resources */,
 				19D479BC212D6D7000944007 /* Main.storyboard in Resources */,
+				1934C93C21353C1D0022ADB5 /* city.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,28 +670,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D47A18212E938100944007 /* GSWaterFlowVC.m in Sources */,
 				19C08DC42131509800BAAF2E /* GSTabBarController.m in Sources */,
 				19D47A14212E938100944007 /* GSStackLayout.m in Sources */,
 				19C08DC12131508400BAAF2E /* GSNavigationController.m in Sources */,
-				19D47A1B212E938100944007 /* GSCustomLayoutVC.m in Sources */,
-				19D47A1D212E938100944007 /* GSNews.m in Sources */,
 				19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */,
-				19D47A23212E938100944007 /* GSNewsCell.m in Sources */,
+				1934C9452135416E0022ADB5 /* UIColor+Utils.m in Sources */,
 				19D479C4212D6D7100944007 /* main.m in Sources */,
+				1934C96421354EA30022ADB5 /* GSWaterFlowVC.m in Sources */,
 				19D47A20212E938100944007 /* GSImageCell.m in Sources */,
+				1934C96D21354FAA0022ADB5 /* GSCarsGroup.m in Sources */,
 				19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */,
 				19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */,
 				19C08DB22130FD4B00BAAF2E /* GSJDButton.m in Sources */,
 				19D47A37212EA1B800944007 /* GSProxy.m in Sources */,
 				19C08DBB21310A6300BAAF2E /* GSJDSearchBar.m in Sources */,
+				1934C96821354F400022ADB5 /* GSCarsListVC.m in Sources */,
 				19C08DBE21313C5D00BAAF2E /* GSJDSearchHistory.m in Sources */,
 				19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */,
+				1934C942213540C70022ADB5 /* GSSegmentedControl.m in Sources */,
 				19C08DAF2130304500BAAF2E /* GSJDNavigationView.m in Sources */,
+				1934C95121354DE40022ADB5 /* GSTableViewListVC.m in Sources */,
 				19C08DC82131514200BAAF2E /* GSHomeVC.m in Sources */,
+				1934C93F21353C3E0022ADB5 /* GSMTAddressModal.m in Sources */,
 				19D479B6212D6D7000944007 /* AppDelegate.m in Sources */,
+				1934C96321354EA30022ADB5 /* GSInfiniteView.m in Sources */,
+				1934C97021354FC80022ADB5 /* GSCarModal.m in Sources */,
 				19D47A19212E938100944007 /* GSCollectionListVC.m in Sources */,
-				19D47A33212E9DDC00944007 /* GSInfiniteView.m in Sources */,
+				1934C94B213543350022ADB5 /* GSAddressTableView.m in Sources */,
 				19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */,
 				19C08DB82131089D00BAAF2E /* GSJDSearchMainVC.m in Sources */,
 				19D47A15212E938100944007 /* GSCircleLayout.m in Sources */,
@@ -589,12 +705,14 @@
 				19D47A1E212E938100944007 /* GSShop.m in Sources */,
 				19D47A13212E938100944007 /* GSLineLayout.m in Sources */,
 				19C08DB52131079800BAAF2E /* GSJDSearchVC.m in Sources */,
-				19D47A1A212E938100944007 /* GSInfiniteVC.m in Sources */,
 				19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */,
+				1934C96021354EA30022ADB5 /* GSCustomLayoutVC.m in Sources */,
+				1934C93821353BEF0022ADB5 /* GSMTAddressMainVC.m in Sources */,
 				1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */,
 				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
-				19D47A17212E938100944007 /* GSDateVC.m in Sources */,
 				19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */,
+				1934C96221354EA30022ADB5 /* GSInfiniteVC.m in Sources */,
+				1934C96121354EA30022ADB5 /* GSDateVC.m in Sources */,
 				19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */,
 				19D47A24212E938100944007 /* GSShopCell.m in Sources */,
 			);
