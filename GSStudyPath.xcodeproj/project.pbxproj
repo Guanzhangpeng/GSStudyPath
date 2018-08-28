@@ -8,8 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		01A4EC63627CA896C5D5232F /* libPods-GSStudyPath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C537F39EA29690E137ED8E /* libPods-GSStudyPath.a */; };
+		1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C934213403E40022ADB5 /* GSIntroductionView.m */; };
+		19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */; };
+		19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA821301F6000BAAF2E /* GSSearchListVC.m */; };
+		19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */; };
+		19C08DAF2130304500BAAF2E /* GSJDNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DAE2130304500BAAF2E /* GSJDNavigationView.m */; };
+		19C08DB22130FD4B00BAAF2E /* GSJDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DB12130FD4B00BAAF2E /* GSJDButton.m */; };
+		19C08DB52131079800BAAF2E /* GSJDSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DB42131079800BAAF2E /* GSJDSearchVC.m */; };
+		19C08DB82131089D00BAAF2E /* GSJDSearchMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DB72131089C00BAAF2E /* GSJDSearchMainVC.m */; };
+		19C08DBB21310A6300BAAF2E /* GSJDSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DBA21310A6300BAAF2E /* GSJDSearchBar.m */; };
+		19C08DBE21313C5D00BAAF2E /* GSJDSearchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DBD21313C5D00BAAF2E /* GSJDSearchHistory.m */; };
+		19C08DC12131508400BAAF2E /* GSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DC02131508400BAAF2E /* GSNavigationController.m */; };
+		19C08DC42131509800BAAF2E /* GSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DC32131509800BAAF2E /* GSTabBarController.m */; };
+		19C08DC82131514200BAAF2E /* GSHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DC72131514200BAAF2E /* GSHomeVC.m */; };
 		19D479B6212D6D7000944007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479B5212D6D7000944007 /* AppDelegate.m */; };
-		19D479B9212D6D7000944007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479B8212D6D7000944007 /* ViewController.m */; };
 		19D479BC212D6D7000944007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D479BA212D6D7000944007 /* Main.storyboard */; };
 		19D479BE212D6D7100944007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D479BD212D6D7100944007 /* Assets.xcassets */; };
 		19D479C1212D6D7100944007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D479BF212D6D7100944007 /* LaunchScreen.storyboard */; };
@@ -24,7 +36,7 @@
 		19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479ED212E938000944007 /* GSWaterFlowLayout.m */; };
 		19D47A17212E938100944007 /* GSDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F3212E938000944007 /* GSDateVC.m */; };
 		19D47A18212E938100944007 /* GSWaterFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F5212E938000944007 /* GSWaterFlowVC.m */; };
-		19D47A19212E938100944007 /* GSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F8212E938000944007 /* GSTableViewController.m */; };
+		19D47A19212E938100944007 /* GSCollectionListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479F8212E938000944007 /* GSCollectionListVC.m */; };
 		19D47A1A212E938100944007 /* GSInfiniteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479FA212E938000944007 /* GSInfiniteVC.m */; };
 		19D47A1B212E938100944007 /* GSCustomLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D479FC212E938000944007 /* GSCustomLayoutVC.m */; };
 		19D47A1C212E938100944007 /* GSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A00212E938000944007 /* GSDate.m */; };
@@ -46,11 +58,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1934C933213403E40022ADB5 /* GSIntroductionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSIntroductionView.h; sourceTree = "<group>"; };
+		1934C934213403E40022ADB5 /* GSIntroductionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSIntroductionView.m; sourceTree = "<group>"; };
+		19C08DA421301B9200BAAF2E /* GSBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseTableViewController.h; sourceTree = "<group>"; };
+		19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseTableViewController.m; sourceTree = "<group>"; };
+		19C08DA721301F6000BAAF2E /* GSSearchListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSearchListVC.h; sourceTree = "<group>"; };
+		19C08DA821301F6000BAAF2E /* GSSearchListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSSearchListVC.m; sourceTree = "<group>"; };
+		19C08DAA21302DEC00BAAF2E /* JDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDHomeVC.h; sourceTree = "<group>"; };
+		19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDHomeVC.m; sourceTree = "<group>"; };
+		19C08DAD2130304500BAAF2E /* GSJDNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSJDNavigationView.h; sourceTree = "<group>"; };
+		19C08DAE2130304500BAAF2E /* GSJDNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSJDNavigationView.m; sourceTree = "<group>"; };
+		19C08DB02130FD4B00BAAF2E /* GSJDButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSJDButton.h; sourceTree = "<group>"; };
+		19C08DB12130FD4B00BAAF2E /* GSJDButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSJDButton.m; sourceTree = "<group>"; };
+		19C08DB32131079800BAAF2E /* GSJDSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSJDSearchVC.h; sourceTree = "<group>"; };
+		19C08DB42131079800BAAF2E /* GSJDSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSJDSearchVC.m; sourceTree = "<group>"; };
+		19C08DB62131089C00BAAF2E /* GSJDSearchMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSJDSearchMainVC.h; sourceTree = "<group>"; };
+		19C08DB72131089C00BAAF2E /* GSJDSearchMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSJDSearchMainVC.m; sourceTree = "<group>"; };
+		19C08DB921310A6300BAAF2E /* GSJDSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSJDSearchBar.h; sourceTree = "<group>"; };
+		19C08DBA21310A6300BAAF2E /* GSJDSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSJDSearchBar.m; sourceTree = "<group>"; };
+		19C08DBC21313C5D00BAAF2E /* GSJDSearchHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSJDSearchHistory.h; sourceTree = "<group>"; };
+		19C08DBD21313C5D00BAAF2E /* GSJDSearchHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSJDSearchHistory.m; sourceTree = "<group>"; };
+		19C08DBF2131508400BAAF2E /* GSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNavigationController.h; sourceTree = "<group>"; };
+		19C08DC02131508400BAAF2E /* GSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNavigationController.m; sourceTree = "<group>"; };
+		19C08DC22131509800BAAF2E /* GSTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSTabBarController.h; sourceTree = "<group>"; };
+		19C08DC32131509800BAAF2E /* GSTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSTabBarController.m; sourceTree = "<group>"; };
+		19C08DC62131514200BAAF2E /* GSHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSHomeVC.h; sourceTree = "<group>"; };
+		19C08DC72131514200BAAF2E /* GSHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSHomeVC.m; sourceTree = "<group>"; };
 		19D479B1212D6D7000944007 /* GSStudyPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSStudyPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D479B4212D6D7000944007 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19D479B5212D6D7000944007 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		19D479B7212D6D7000944007 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		19D479B8212D6D7000944007 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		19D479BB212D6D7000944007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19D479BD212D6D7100944007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D479C0212D6D7100944007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,9 +111,9 @@
 		19D479F3212E938000944007 /* GSDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDateVC.m; sourceTree = "<group>"; };
 		19D479F4212E938000944007 /* GSInfiniteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSInfiniteVC.h; sourceTree = "<group>"; };
 		19D479F5212E938000944007 /* GSWaterFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWaterFlowVC.m; sourceTree = "<group>"; };
-		19D479F6212E938000944007 /* GSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTableViewController.h; sourceTree = "<group>"; };
+		19D479F6212E938000944007 /* GSCollectionListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCollectionListVC.h; sourceTree = "<group>"; };
 		19D479F7212E938000944007 /* GSCustomLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCustomLayoutVC.h; sourceTree = "<group>"; };
-		19D479F8212E938000944007 /* GSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTableViewController.m; sourceTree = "<group>"; };
+		19D479F8212E938000944007 /* GSCollectionListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCollectionListVC.m; sourceTree = "<group>"; };
 		19D479F9212E938000944007 /* GSWaterFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWaterFlowVC.h; sourceTree = "<group>"; };
 		19D479FA212E938000944007 /* GSInfiniteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSInfiniteVC.m; sourceTree = "<group>"; };
 		19D479FB212E938000944007 /* GSDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDateVC.h; sourceTree = "<group>"; };
@@ -126,6 +162,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1934C931213401630022ADB5 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1934C932213403CF0022ADB5 /* 引导页 */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		1934C932213403CF0022ADB5 /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				1934C933213403E40022ADB5 /* GSIntroductionView.h */,
+				1934C934213403E40022ADB5 /* GSIntroductionView.m */,
+			);
+			path = "引导页";
+			sourceTree = "<group>";
+		};
+		19C08DA321301B6E00BAAF2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19C08DA421301B9200BAAF2E /* GSBaseTableViewController.h */,
+				19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */,
+				19C08DBF2131508400BAAF2E /* GSNavigationController.h */,
+				19C08DC02131508400BAAF2E /* GSNavigationController.m */,
+				19C08DC22131509800BAAF2E /* GSTabBarController.h */,
+				19C08DC32131509800BAAF2E /* GSTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19C08DC52131514200BAAF2E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				19C08DC62131514200BAAF2E /* GSHomeVC.h */,
+				19C08DC72131514200BAAF2E /* GSHomeVC.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		19D479A8212D6D7000944007 = {
 			isa = PBXGroup;
 			children = (
@@ -148,13 +223,13 @@
 			isa = PBXGroup;
 			children = (
 				19D47A28212E969400944007 /* Tools */,
+				19C08DC52131514200BAAF2E /* Main */,
+				1934C931213401630022ADB5 /* UIScrollView */,
 				19D479E8212E938000944007 /* UICollectionView */,
 				19D479D1212D7FE100944007 /* UISearchController */,
 				19D479CB212D6DC900944007 /* Sources */,
 				19D479B4212D6D7000944007 /* AppDelegate.h */,
 				19D479B5212D6D7000944007 /* AppDelegate.m */,
-				19D479B7212D6D7000944007 /* ViewController.h */,
-				19D479B8212D6D7000944007 /* ViewController.m */,
 				19D479BA212D6D7000944007 /* Main.storyboard */,
 				19D479BD212D6D7100944007 /* Assets.xcassets */,
 				19D479BF212D6D7100944007 /* LaunchScreen.storyboard */,
@@ -189,6 +264,8 @@
 				19D479E6212E5D8D00944007 /* 京东搜索框 */,
 				19D479E5212E5D8D00944007 /* 美团地址搜索框 */,
 				19D479DE212E5D6400944007 /* 基本使用 */,
+				19C08DA721301F6000BAAF2E /* GSSearchListVC.h */,
+				19C08DA821301F6000BAAF2E /* GSSearchListVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +300,20 @@
 		19D479E6212E5D8D00944007 /* 京东搜索框 */ = {
 			isa = PBXGroup;
 			children = (
+				19C08DAA21302DEC00BAAF2E /* JDHomeVC.h */,
+				19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */,
+				19C08DAD2130304500BAAF2E /* GSJDNavigationView.h */,
+				19C08DAE2130304500BAAF2E /* GSJDNavigationView.m */,
+				19C08DB02130FD4B00BAAF2E /* GSJDButton.h */,
+				19C08DB12130FD4B00BAAF2E /* GSJDButton.m */,
+				19C08DB32131079800BAAF2E /* GSJDSearchVC.h */,
+				19C08DB42131079800BAAF2E /* GSJDSearchVC.m */,
+				19C08DB62131089C00BAAF2E /* GSJDSearchMainVC.h */,
+				19C08DB72131089C00BAAF2E /* GSJDSearchMainVC.m */,
+				19C08DB921310A6300BAAF2E /* GSJDSearchBar.h */,
+				19C08DBA21310A6300BAAF2E /* GSJDSearchBar.m */,
+				19C08DBC21313C5D00BAAF2E /* GSJDSearchHistory.h */,
+				19C08DBD21313C5D00BAAF2E /* GSJDSearchHistory.m */,
 			);
 			path = "京东搜索框";
 			sourceTree = "<group>";
@@ -256,8 +347,8 @@
 		19D479F2212E938000944007 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19D479F6212E938000944007 /* GSTableViewController.h */,
-				19D479F8212E938000944007 /* GSTableViewController.m */,
+				19D479F6212E938000944007 /* GSCollectionListVC.h */,
+				19D479F8212E938000944007 /* GSCollectionListVC.m */,
 				19D479F4212E938000944007 /* GSInfiniteVC.h */,
 				19D479FA212E938000944007 /* GSInfiniteVC.m */,
 				19D479FB212E938000944007 /* GSDateVC.h */,
@@ -309,6 +400,7 @@
 		19D47A28212E969400944007 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				19C08DA321301B6E00BAAF2E /* Controller */,
 				19D47A34212EA1B800944007 /* Modal */,
 				19D47A29212E969400944007 /* Category */,
 			);
@@ -468,8 +560,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D47A18212E938100944007 /* GSWaterFlowVC.m in Sources */,
+				19C08DC42131509800BAAF2E /* GSTabBarController.m in Sources */,
 				19D47A14212E938100944007 /* GSStackLayout.m in Sources */,
-				19D479B9212D6D7000944007 /* ViewController.m in Sources */,
+				19C08DC12131508400BAAF2E /* GSNavigationController.m in Sources */,
 				19D47A1B212E938100944007 /* GSCustomLayoutVC.m in Sources */,
 				19D47A1D212E938100944007 /* GSNews.m in Sources */,
 				19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */,
@@ -477,21 +570,32 @@
 				19D479C4212D6D7100944007 /* main.m in Sources */,
 				19D47A20212E938100944007 /* GSImageCell.m in Sources */,
 				19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */,
+				19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */,
+				19C08DB22130FD4B00BAAF2E /* GSJDButton.m in Sources */,
 				19D47A37212EA1B800944007 /* GSProxy.m in Sources */,
+				19C08DBB21310A6300BAAF2E /* GSJDSearchBar.m in Sources */,
+				19C08DBE21313C5D00BAAF2E /* GSJDSearchHistory.m in Sources */,
 				19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */,
+				19C08DAF2130304500BAAF2E /* GSJDNavigationView.m in Sources */,
+				19C08DC82131514200BAAF2E /* GSHomeVC.m in Sources */,
 				19D479B6212D6D7000944007 /* AppDelegate.m in Sources */,
-				19D47A19212E938100944007 /* GSTableViewController.m in Sources */,
+				19D47A19212E938100944007 /* GSCollectionListVC.m in Sources */,
 				19D47A33212E9DDC00944007 /* GSInfiniteView.m in Sources */,
 				19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */,
+				19C08DB82131089D00BAAF2E /* GSJDSearchMainVC.m in Sources */,
 				19D47A15212E938100944007 /* GSCircleLayout.m in Sources */,
 				19D47A2C212E96A600944007 /* UIView+Size.m in Sources */,
 				19D47A1C212E938100944007 /* GSDate.m in Sources */,
 				19D47A1E212E938100944007 /* GSShop.m in Sources */,
 				19D47A13212E938100944007 /* GSLineLayout.m in Sources */,
+				19C08DB52131079800BAAF2E /* GSJDSearchVC.m in Sources */,
 				19D47A1A212E938100944007 /* GSInfiniteVC.m in Sources */,
 				19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */,
+				1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */,
 				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
 				19D47A17212E938100944007 /* GSDateVC.m in Sources */,
+				19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */,
+				19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */,
 				19D47A24212E938100944007 /* GSShopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

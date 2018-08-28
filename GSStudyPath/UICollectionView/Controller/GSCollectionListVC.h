@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface GSTableViewController : UITableViewController
+#import "GSBaseTableViewController.h"
+@interface GSCollectionListVC : GSBaseTableViewController
 
 @end

@@ -73,7 +73,7 @@ static NSString *const cellID = @"News";
 
 //开启定时器
 - (void)startTimer{
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:[GSProxy proxyWithTarget:self] selector:@selector(nextPage) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer timerWithTimeInterval:2.f target:[GSProxy proxyWithTarget:self] selector:@selector(nextPage) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     self.timer = timer;
 }
@@ -151,5 +151,10 @@ static NSString *const cellID = @"News";
     if (self.imgClick) {
         self.imgClick([self.imgArray[indexPath.row] integerValue]);
     }
+}
+
+-(void)dealloc{
+//    [self stopTimer];
+    NSLog(@"%s",__func__);
 }
 @end

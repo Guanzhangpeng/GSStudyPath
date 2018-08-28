@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+    self.tableView.tableFooterView = [[UIView alloc] init];
 }
 
 -(void)setFilterDataArray:(NSArray *)filterDataArray{

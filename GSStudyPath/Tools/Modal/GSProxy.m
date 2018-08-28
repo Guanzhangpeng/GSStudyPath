@@ -15,19 +15,20 @@
     proxy.target = target;
     return proxy;
 }
--(void)forwardInvocation:(NSInvocation *)invocation{
-
-    [invocation invokeWithTarget:self.target];
+- (id)forwardingTargetForSelector:(SEL)selector
+{
+    return _target;
 }
--(NSMethodSignature *)methodSignatureForSelector:(SEL)sel{
-    NSMethodSignature *signature = nil;
-    if ([self.target methodSignatureForSelector:sel]) {
-        signature = [self.target methodSignatureForSelector:sel];
-    }
-    else
-    {
-        signature = [super methodSignatureForSelector:sel];
-    }
-    return signature;
+
+- (void)forwardInvocation:(NSInvocation *)invocation
+{
+    void *nullPointer = NULL;
+    [invocation setReturnValue:&nullPointer];
+}
+
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)selector
+{
+    return [NSObject instanceMethodSignatureForSelector:@selector(init)];
 }
 @end
