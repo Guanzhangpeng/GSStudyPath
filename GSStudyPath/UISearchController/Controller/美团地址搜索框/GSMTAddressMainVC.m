@@ -24,9 +24,13 @@
     if (!_addressTableView) {
         CGFloat yCoordinate = 0.f;
         _addressTableView = [[GSAddressTableView alloc] initWithFrame:CGRectMake(0.f, yCoordinate, SCREENSIZE.width, SCREENSIZE.height) style:UITableViewStylePlain];
-        _addressTableView.cityArr = self.dataModal.cityArr;
         _addressTableView.cityDataDict = self.dataModal.cityDataDict;
-        [_addressTableView reloadData];
+        _addressTableView.cityArr = self.dataModal.cityArr;
+        __weak typeof(self) weakSelf = self;
+        _addressTableView.selectCityAction = ^(NSString *city) {
+            [weakSelf closeAction];
+            NSLog(@"当前选中的城市:%@",city);
+        };
     }
     return _addressTableView;
 }

@@ -30,7 +30,14 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    cell.textLabel.text = self.filterDataArray[indexPath.row];
+    id data = self.filterDataArray[indexPath.row];
+    if ([data isKindOfClass:[NSDictionary class]]) {
+        NSDictionary *dict = self.filterDataArray[indexPath.row];
+        cell.textLabel.text = dict[@"name"];
+    }else{
+         cell.textLabel.text = self.filterDataArray[indexPath.row];
+    }
+   
     return cell;
 }
 @end

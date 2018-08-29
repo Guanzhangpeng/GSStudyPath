@@ -27,6 +27,7 @@ static NSString *const cellID = @"cellID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"汽车列表";
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
 }

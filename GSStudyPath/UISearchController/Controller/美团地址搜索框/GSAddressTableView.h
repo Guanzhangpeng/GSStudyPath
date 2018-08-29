@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface GSAddressTableView : UITableView
-@property(nonatomic, strong) NSMutableDictionary *cityDataDict;
-@property(nonatomic, strong) NSMutableArray      *cityArr;
+@property (nonatomic, strong) NSMutableDictionary *cityDataDict;
+@property (nonatomic, strong) NSArray      *cityArr;
+@property (nonatomic, strong) void(^selectCityAction)(NSString *city);
 @end
