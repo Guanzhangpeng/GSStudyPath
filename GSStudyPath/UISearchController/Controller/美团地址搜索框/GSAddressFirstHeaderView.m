@@ -11,9 +11,8 @@
 
 @implementation GSAddressFirstHeaderView
 
--(instancetype)initWithFrame:(CGRect)frame{
-    if(self = [super initWithFrame:frame]){
-        
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         self.contentView.backgroundColor = [UIColor colorWithRed:0.97 green:0.97 blue:0.97 alpha:1];
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.f, 0.f, 200.f, 30.f)];
         titleLabel.textColor = [UIColor grayColor];
@@ -30,6 +29,13 @@
         [citySelectBtn addTarget:self action:@selector(citySelect:) forControlEvents:UIControlEventTouchUpInside];
         citySelectBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width-100.f, 0.f, 80.f, 30.f);
         [self addSubview:citySelectBtn];
+    }
+    return self;
+}
+-(instancetype)initWithFrame:(CGRect)frame{
+    if(self = [super initWithFrame:frame]){
+        
+       
     }
     return self;
 }

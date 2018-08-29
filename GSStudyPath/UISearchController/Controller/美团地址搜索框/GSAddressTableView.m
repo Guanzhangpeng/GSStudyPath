@@ -11,12 +11,11 @@
 #import "GSAddressFirstHeaderView.h"
 #import "GSAddressOtherHeaderView.h"
 #import "GSAddressSectionCell.h"
-#import "GSShadowView.h"
+#import "GSSearchResultVC.h"
 @interface GSAddressTableView()<UITableViewDelegate,UITableViewDataSource,headerViewDelegate,UISearchResultsUpdating,UISearchControllerDelegate>{
     BOOL _countyDisplay;
     CGFloat _countyHeight;
     BOOL isRightIndexHidden;//是否隐藏左边的索引
-    GSShadowView *shadowView;//遮盖
 }
 @property(nonatomic, strong) UISearchController *searchCtrl;
 @property (nonatomic, strong) NSMutableDictionary *sectionDict;//组数据
@@ -41,7 +40,8 @@ static NSString *const headerCellID = @"headerCellID";
 }
 -(UISearchController *)searchCtrl{
     if (!_searchCtrl) {
-        _searchCtrl = [[UISearchController alloc] initWithSearchResultsController:nil];
+        GSSearchResultVC *resultVC = [[GSSearchResultVC alloc] init];
+        _searchCtrl = [[UISearchController alloc] initWithSearchResultsController:resultVC];
         _searchCtrl.searchResultsUpdater = self;
         _searchCtrl.delegate = self;
         _searchCtrl.searchBar.placeholder = @"输入城市名称";
@@ -84,40 +84,19 @@ static NSString *const headerCellID = @"headerCellID";
 }
 #pragma  mark --UISearchResultsUpdating
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(SELF CONTAINS %@)",searchController.searchBar.text];
-    self.filterArray = [self.cityArr filteredArrayUsingPredicate:predicate];
-    
-//    for (NSArray *cityArray in _cityArr) {
-//       NSArray *tempArray = [cityArray filteredArrayUsingPredicate:predicate];
-//        if (tempArray.count > 0) {
-//            [filterArray addObjectsFromArray:tempArray];
-//        }
-//    }
-    [self reloadData];
+
 }
 #pragma  mark --UISearchControllerDelegate
 -(void)willPresentSearchController:(UISearchController *)searchController{
     
     isRightIndexHidden = YES;
     [self reloadSectionIndexTitles];
+}
+- (void)didDismissSearchController:(UISearchController *)searchController {
     
-    CGFloat yCoordinate = 108.f;
+    isRightIndexHidden = NO;
+    [self reloadSectionIndexTitles];
     
-    if (@available(iOS 11, *)) {
-        yCoordinate = 120.f;
-    }
-    
-    if (GS_iPhoneX) {
-        yCoordinate = 144.f;
-    }
-    
-    shadowView = [[GSShadowView alloc] initWithFrame:CGRectMake(0.f, yCoordinate, searchController.view.gs_width, searchController.view.gs_height-yCoordinate)];
-    shadowView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5f];
-    
-    shadowView.touchBlock = ^{
-        searchController.active = NO;
-    };
-//    [searchController.view addSubview:shadowView];
 }
 #pragma mark - headerView delegate method
 - (void)citySelectAction:(BOOL)isSelect {
@@ -135,7 +114,7 @@ static NSString *const headerCellID = @"headerCellID";
         //计算行高
         NSUInteger lines = (self.countyArray.count + 3 - 1) / 3;
         _countyHeight = lines * 44.f;
-        
+//        [self reloadData];
         //更新tableView
         [self beginUpdates];
         [self insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
@@ -148,8 +127,9 @@ static NSString *const headerCellID = @"headerCellID";
         [self beginUpdates];
         [self deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
         [self endUpdates];
-        
+//          [self reloadData];
     }
+    
 }
 #pragma mark -- system method
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
@@ -189,15 +169,9 @@ static NSString *const headerCellID = @"headerCellID";
 
 #pragma mark --UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    if (self.searchCtrl.active) {
-        return 0 ;
-    }
     return self.sectionDict.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (self.searchCtrl.active) {
-        return self.filterArray.count;
-    }
     if (section == 0) {
         return _countyDisplay?1:0;
     } else if (section < 4) {
@@ -209,13 +183,7 @@ static NSString *const headerCellID = @"headerCellID";
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (self.searchCtrl.active) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-        NSDictionary *dict = self.filterArray[indexPath.row];
-        cell.textLabel.text = dict[@"name"];
-        return cell;
-    }
-    else if (indexPath.section < 4) {
+    if (indexPath.section < 4) {
         
         NSArray *cityArr;
         
@@ -266,7 +234,10 @@ static NSString *const headerCellID = @"headerCellID";
     switch (section) {
         case 0:
         {
-            GSAddressFirstHeaderView *headerView = [[GSAddressFirstHeaderView alloc] init];
+            GSAddressFirstHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"firstSection"];
+            if (!headerView) {
+                headerView = [[GSAddressFirstHeaderView alloc] initWithReuseIdentifier:@"firstSection"];
+            }
             headerView.delegate = self;
             return headerView;
         }

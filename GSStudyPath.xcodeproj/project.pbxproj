@@ -15,7 +15,6 @@
 		1934C93F21353C3E0022ADB5 /* GSMTAddressModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C93E21353C3E0022ADB5 /* GSMTAddressModal.m */; };
 		1934C942213540C70022ADB5 /* GSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C941213540C70022ADB5 /* GSSegmentedControl.m */; };
 		1934C9452135416E0022ADB5 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9442135416E0022ADB5 /* UIColor+Utils.m */; };
-		1934C94B213543350022ADB5 /* GSAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C94A213543350022ADB5 /* GSAddressTableView.m */; };
 		1934C95121354DE40022ADB5 /* GSTableViewListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95021354DE40022ADB5 /* GSTableViewListVC.m */; };
 		1934C96021354EA30022ADB5 /* GSCustomLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95421354EA30022ADB5 /* GSCustomLayoutVC.m */; };
 		1934C96121354EA30022ADB5 /* GSDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C95621354EA30022ADB5 /* GSDateVC.m */; };
@@ -30,7 +29,7 @@
 		1934C9C82136757A0022ADB5 /* GSSelectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9C72136757A0022ADB5 /* GSSelectButton.m */; };
 		1934C9CB213677120022ADB5 /* GSAddressOtherHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CA213677120022ADB5 /* GSAddressOtherHeaderView.m */; };
 		1934C9CE21367C280022ADB5 /* GSAddressSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */; };
-		1934C9D121368ABF0022ADB5 /* GSShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9D021368ABF0022ADB5 /* GSShadowView.m */; };
+		1934C9D32136CA5D0022ADB5 /* GSAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */; };
 		19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */; };
 		19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA821301F6000BAAF2E /* GSSearchListVC.m */; };
 		19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */; };
@@ -86,7 +85,6 @@
 		1934C9432135416E0022ADB5 /* UIColor+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
 		1934C9442135416E0022ADB5 /* UIColor+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
 		1934C949213543350022ADB5 /* GSAddressTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAddressTableView.h; sourceTree = "<group>"; };
-		1934C94A213543350022ADB5 /* GSAddressTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressTableView.m; sourceTree = "<group>"; };
 		1934C94F21354DE40022ADB5 /* GSTableViewListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSTableViewListVC.h; sourceTree = "<group>"; };
 		1934C95021354DE40022ADB5 /* GSTableViewListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSTableViewListVC.m; sourceTree = "<group>"; };
 		1934C95321354EA30022ADB5 /* GSCustomLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCustomLayoutVC.h; sourceTree = "<group>"; };
@@ -114,8 +112,7 @@
 		1934C9CA213677120022ADB5 /* GSAddressOtherHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressOtherHeaderView.m; sourceTree = "<group>"; };
 		1934C9CC21367C280022ADB5 /* GSAddressSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAddressSectionCell.h; sourceTree = "<group>"; };
 		1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressSectionCell.m; sourceTree = "<group>"; };
-		1934C9CF21368ABF0022ADB5 /* GSShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSShadowView.h; sourceTree = "<group>"; };
-		1934C9D021368ABF0022ADB5 /* GSShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSShadowView.m; sourceTree = "<group>"; };
+		1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAddressTableView.m; sourceTree = "<group>"; };
 		19C08DA421301B9200BAAF2E /* GSBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseTableViewController.h; sourceTree = "<group>"; };
 		19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseTableViewController.m; sourceTree = "<group>"; };
 		19C08DA721301F6000BAAF2E /* GSSearchListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSearchListVC.h; sourceTree = "<group>"; };
@@ -423,7 +420,7 @@
 				1934C940213540C70022ADB5 /* GSSegmentedControl.h */,
 				1934C941213540C70022ADB5 /* GSSegmentedControl.m */,
 				1934C949213543350022ADB5 /* GSAddressTableView.h */,
-				1934C94A213543350022ADB5 /* GSAddressTableView.m */,
+				1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */,
 				1934C9C3213674FB0022ADB5 /* GSAddressFirstHeaderView.h */,
 				1934C9C4213674FB0022ADB5 /* GSAddressFirstHeaderView.m */,
 				1934C9C62136757A0022ADB5 /* GSSelectButton.h */,
@@ -432,8 +429,6 @@
 				1934C9CA213677120022ADB5 /* GSAddressOtherHeaderView.m */,
 				1934C9CC21367C280022ADB5 /* GSAddressSectionCell.h */,
 				1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */,
-				1934C9CF21368ABF0022ADB5 /* GSShadowView.h */,
-				1934C9D021368ABF0022ADB5 /* GSShadowView.m */,
 			);
 			path = "美团地址搜索框";
 			sourceTree = "<group>";
@@ -715,6 +710,7 @@
 				1934C942213540C70022ADB5 /* GSSegmentedControl.m in Sources */,
 				19C08DAF2130304500BAAF2E /* GSJDNavigationView.m in Sources */,
 				1934C95121354DE40022ADB5 /* GSTableViewListVC.m in Sources */,
+				1934C9D32136CA5D0022ADB5 /* GSAddressTableView.m in Sources */,
 				19C08DC82131514200BAAF2E /* GSHomeVC.m in Sources */,
 				1934C9C82136757A0022ADB5 /* GSSelectButton.m in Sources */,
 				1934C93F21353C3E0022ADB5 /* GSMTAddressModal.m in Sources */,
@@ -723,7 +719,6 @@
 				1934C97021354FC80022ADB5 /* GSCarModal.m in Sources */,
 				19D47A19212E938100944007 /* GSCollectionListVC.m in Sources */,
 				1934C9CB213677120022ADB5 /* GSAddressOtherHeaderView.m in Sources */,
-				1934C94B213543350022ADB5 /* GSAddressTableView.m in Sources */,
 				19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */,
 				19C08DB82131089D00BAAF2E /* GSJDSearchMainVC.m in Sources */,
 				1934C9CE21367C280022ADB5 /* GSAddressSectionCell.m in Sources */,
@@ -739,7 +734,6 @@
 				1934C93821353BEF0022ADB5 /* GSMTAddressMainVC.m in Sources */,
 				1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */,
 				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
-				1934C9D121368ABF0022ADB5 /* GSShadowView.m in Sources */,
 				19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */,
 				1934C96221354EA30022ADB5 /* GSInfiniteVC.m in Sources */,
 				1934C96121354EA30022ADB5 /* GSDateVC.m in Sources */,
