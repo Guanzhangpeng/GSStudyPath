@@ -1,10 +1,11 @@
-### Github 点个赞↑👍 感谢您的支持!
-### 主要功能列表
+##                                             Github 点个赞↑👍 感谢您的支持!
+## 主要功能列表
 
-#### 引导页
+### 引导页
+
 **一句代码即可集成的引导页**
 
-#### UISearchController搜索框
+### UISearchController搜索框
 
 ![QQ20180822-200817](http://om62rgcp0.bkt.clouddn.com/QQ20180822-200817.gif)
 
@@ -12,7 +13,7 @@
 
 ![QQ20180825-163629](http://om62rgcp0.bkt.clouddn.com/QQ20180825-163629.gif)
 
-#### UICollectionView
+### UICollectionView
 
 **无限循环轮播两句代码即可调用:**
 
