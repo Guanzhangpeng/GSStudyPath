@@ -30,6 +30,12 @@
 		1934C9CB213677120022ADB5 /* GSAddressOtherHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CA213677120022ADB5 /* GSAddressOtherHeaderView.m */; };
 		1934C9CE21367C280022ADB5 /* GSAddressSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */; };
 		1934C9D32136CA5D0022ADB5 /* GSAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */; };
+		19970A8F2137A53000697EB1 /* ZPSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A852137A52F00697EB1 /* ZPSegmentView.m */; };
+		19970A902137A53000697EB1 /* ZPSegmentBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A862137A52F00697EB1 /* ZPSegmentBarStyle.m */; };
+		19970A912137A53000697EB1 /* UIView+ZPSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A882137A52F00697EB1 /* UIView+ZPSegmentBar.m */; };
+		19970A922137A53000697EB1 /* ZPSegmentBarContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A8A2137A52F00697EB1 /* ZPSegmentBarContent.m */; };
+		19970A932137A53000697EB1 /* ZPSegmentBarTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A8E2137A53000697EB1 /* ZPSegmentBarTitle.m */; };
+		19970A962137A55F00697EB1 /* GSSegmentBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A952137A55F00697EB1 /* GSSegmentBarVC.m */; };
 		19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */; };
 		19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA821301F6000BAAF2E /* GSSearchListVC.m */; };
 		19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */; };
@@ -113,6 +119,18 @@
 		1934C9CC21367C280022ADB5 /* GSAddressSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAddressSectionCell.h; sourceTree = "<group>"; };
 		1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressSectionCell.m; sourceTree = "<group>"; };
 		1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAddressTableView.m; sourceTree = "<group>"; };
+		19970A852137A52F00697EB1 /* ZPSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentView.m; sourceTree = "<group>"; };
+		19970A862137A52F00697EB1 /* ZPSegmentBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentBarStyle.m; sourceTree = "<group>"; };
+		19970A872137A52F00697EB1 /* ZPSegmentBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSegmentBarStyle.h; sourceTree = "<group>"; };
+		19970A882137A52F00697EB1 /* UIView+ZPSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZPSegmentBar.m"; sourceTree = "<group>"; };
+		19970A892137A52F00697EB1 /* UIView+ZPSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZPSegmentBar.h"; sourceTree = "<group>"; };
+		19970A8A2137A52F00697EB1 /* ZPSegmentBarContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentBarContent.m; sourceTree = "<group>"; };
+		19970A8B2137A52F00697EB1 /* ZPSegmentBarTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSegmentBarTitle.h; sourceTree = "<group>"; };
+		19970A8C2137A52F00697EB1 /* ZPSegmentBarContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSegmentBarContent.h; sourceTree = "<group>"; };
+		19970A8D2137A53000697EB1 /* ZPSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSegmentView.h; sourceTree = "<group>"; };
+		19970A8E2137A53000697EB1 /* ZPSegmentBarTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentBarTitle.m; sourceTree = "<group>"; };
+		19970A942137A55F00697EB1 /* GSSegmentBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSegmentBarVC.h; sourceTree = "<group>"; };
+		19970A952137A55F00697EB1 /* GSSegmentBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSSegmentBarVC.m; sourceTree = "<group>"; };
 		19C08DA421301B9200BAAF2E /* GSBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseTableViewController.h; sourceTree = "<group>"; };
 		19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseTableViewController.m; sourceTree = "<group>"; };
 		19C08DA721301F6000BAAF2E /* GSSearchListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSearchListVC.h; sourceTree = "<group>"; };
@@ -204,6 +222,7 @@
 		1934C931213401630022ADB5 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				19970A832137A45F00697EB1 /* SegmentBar */,
 				1934C932213403CF0022ADB5 /* 引导页 */,
 			);
 			path = UIScrollView;
@@ -293,6 +312,33 @@
 				1934C96721354F400022ADB5 /* GSCarsListVC.m */,
 			);
 			path = "汽车列表-索引";
+			sourceTree = "<group>";
+		};
+		19970A832137A45F00697EB1 /* SegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				19970A842137A50D00697EB1 /* Classes */,
+				19970A942137A55F00697EB1 /* GSSegmentBarVC.h */,
+				19970A952137A55F00697EB1 /* GSSegmentBarVC.m */,
+			);
+			path = SegmentBar;
+			sourceTree = "<group>";
+		};
+		19970A842137A50D00697EB1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				19970A892137A52F00697EB1 /* UIView+ZPSegmentBar.h */,
+				19970A882137A52F00697EB1 /* UIView+ZPSegmentBar.m */,
+				19970A8C2137A52F00697EB1 /* ZPSegmentBarContent.h */,
+				19970A8A2137A52F00697EB1 /* ZPSegmentBarContent.m */,
+				19970A872137A52F00697EB1 /* ZPSegmentBarStyle.h */,
+				19970A862137A52F00697EB1 /* ZPSegmentBarStyle.m */,
+				19970A8B2137A52F00697EB1 /* ZPSegmentBarTitle.h */,
+				19970A8E2137A53000697EB1 /* ZPSegmentBarTitle.m */,
+				19970A8D2137A53000697EB1 /* ZPSegmentView.h */,
+				19970A852137A52F00697EB1 /* ZPSegmentView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		19C08DA321301B6E00BAAF2E /* Controller */ = {
@@ -692,7 +738,9 @@
 			files = (
 				19C08DC42131509800BAAF2E /* GSTabBarController.m in Sources */,
 				19D47A14212E938100944007 /* GSStackLayout.m in Sources */,
+				19970A902137A53000697EB1 /* ZPSegmentBarStyle.m in Sources */,
 				19C08DC12131508400BAAF2E /* GSNavigationController.m in Sources */,
+				19970A932137A53000697EB1 /* ZPSegmentBarTitle.m in Sources */,
 				19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */,
 				1934C9452135416E0022ADB5 /* UIColor+Utils.m in Sources */,
 				19D479C4212D6D7100944007 /* main.m in Sources */,
@@ -703,9 +751,11 @@
 				19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */,
 				19C08DB22130FD4B00BAAF2E /* GSJDButton.m in Sources */,
 				19D47A37212EA1B800944007 /* GSProxy.m in Sources */,
+				19970A922137A53000697EB1 /* ZPSegmentBarContent.m in Sources */,
 				19C08DBB21310A6300BAAF2E /* GSJDSearchBar.m in Sources */,
 				1934C96821354F400022ADB5 /* GSCarsListVC.m in Sources */,
 				19C08DBE21313C5D00BAAF2E /* GSJDSearchHistory.m in Sources */,
+				19970A8F2137A53000697EB1 /* ZPSegmentView.m in Sources */,
 				19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */,
 				1934C942213540C70022ADB5 /* GSSegmentedControl.m in Sources */,
 				19C08DAF2130304500BAAF2E /* GSJDNavigationView.m in Sources */,
@@ -714,6 +764,7 @@
 				19C08DC82131514200BAAF2E /* GSHomeVC.m in Sources */,
 				1934C9C82136757A0022ADB5 /* GSSelectButton.m in Sources */,
 				1934C93F21353C3E0022ADB5 /* GSMTAddressModal.m in Sources */,
+				19970A912137A53000697EB1 /* UIView+ZPSegmentBar.m in Sources */,
 				19D479B6212D6D7000944007 /* AppDelegate.m in Sources */,
 				1934C96321354EA30022ADB5 /* GSInfiniteView.m in Sources */,
 				1934C97021354FC80022ADB5 /* GSCarModal.m in Sources */,
@@ -731,6 +782,7 @@
 				19C08DB52131079800BAAF2E /* GSJDSearchVC.m in Sources */,
 				19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */,
 				1934C96021354EA30022ADB5 /* GSCustomLayoutVC.m in Sources */,
+				19970A962137A55F00697EB1 /* GSSegmentBarVC.m in Sources */,
 				1934C93821353BEF0022ADB5 /* GSMTAddressMainVC.m in Sources */,
 				1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */,
 				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
