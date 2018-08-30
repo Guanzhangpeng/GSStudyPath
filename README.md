@@ -3,19 +3,34 @@
 
 ### 引导页
 
-**一句代码即可集成的引导页**
+**一句代码集成图片引导页**
+
+```objc
+  [GSIntroductionView sharedWithImages:@[@"user_guid1",@"user_guid2",@"user_guid3"]];
+```
+
 
 ### UISearchController搜索框
 
-![QQ20180822-200817](http://om62rgcp0.bkt.clouddn.com/QQ20180822-200817.gif)
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180822-200817.gif)
 
-![QQ20180830-101350](http://om62rgcp0.bkt.clouddn.com/QQ20180830-101350.gif)
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180825-163629.gif)
 
-![QQ20180825-163629](http://om62rgcp0.bkt.clouddn.com/QQ20180825-163629.gif)
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180830-101350.gif)
 
 ### UICollectionView
 
 **无限循环轮播两句代码即可调用:**
+
+```objc
+    GSInfiniteView *infiniteView = [[GSInfiniteView alloc] initWithFrame:CGRectMake(0, 64, SCREENSIZE.width, 280)];
+    infiniteView.imgArray = @[@"1",@"2",@"3",@"4",@"5"];//图片数组
+    infiniteView.desArray = @[@"第十六届",@"还是到了发生了",@"胜利大街分类数据得浪费",@"胜利大街菲利斯佛罗伦萨的积分老师讲东方闪电",@"东山街道解放路围殴我可是绝大部分快睡吧达芙妮"];//描述数组
+    infiniteView.imgClick = ^(NSInteger index) {
+        NSLog(@"点击了第 %ld 张图片",index);
+    };
+    [self.view addSubview:infiniteView];
+```
 
 ![](http://om62rgcp0.bkt.clouddn.com/15355979341848.jpg)
 
