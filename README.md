@@ -7,11 +7,11 @@
 
 ### UISearchController搜索框
 
-![QQ20180822-200817](http://om62rgcp0.bkt.clouddn.com/QQ20180822-200817.gif)
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180822-200817.gif)
 
-![QQ20180830-101350](http://om62rgcp0.bkt.clouddn.com/QQ20180830-101350.gif)
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180825-163629.gif)
 
-![QQ20180825-163629](http://om62rgcp0.bkt.clouddn.com/QQ20180825-163629.gif)
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180830-101350.gif)
 
 ### UICollectionView
 
