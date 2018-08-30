@@ -1,16 +1,37 @@
 ##                                             Github 点个赞↑👍 感谢您的支持!
 ## 主要功能列表
 
-### 引导页
+### 一.引导页
 
 **一句代码集成图片引导页**
 
 ```objc
   [GSIntroductionView sharedWithImages:@[@"user_guid1",@"user_guid2",@"user_guid3"]];
 ```
+### 二.SegmentBar
 
+**SegmentBar 类似网易新闻 今日头条的标题栏 集成超级简单方便**
 
-### UISearchController搜索框
+```objc
+     ZPSegmentView * segmentView=[[ZPSegmentView alloc] initWithFrame:frame];
+    [segmentView setupWithtitles:@[@"汽车",@"美女",@"头条",@"财经新闻"] style:style childVcs:@[控制器] parentVc:self];
+    [self.view addSubview:segmentView];
+```
+然后我们可以为`SegmentBar`指定自己想要的样式:
+
+```objc
+    ZPSegmentBarStyle * style=[[ZPSegmentBarStyle alloc] init];
+    style.isScrollEnabled=NO;//导航条是否可以滚动,默认YES;
+    style.isShowCover=YES;//导航条是否显示遮盖效果,默认YES;
+    style.coverViewMargin=6;//遮盖间距;
+    style.isShowBottomLine=YES;//导航条下方是否显示BottomLine,默认YES;
+    style.bottomLineColor=[UIColor orangeColor];//BottomLine 的颜色;
+    style.isNeedScale=YES;//导航条是否有放大效果,默认YES;
+```
+效果图如下:
+
+![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180830-131055.gif)
+### 三.UISearchController搜索框
 
 ![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180822-200817.gif)
 
@@ -18,7 +39,7 @@
 
 ![](https://github.com/Guanzhangpeng/GSStudyPath/blob/master/IMAGES/QQ20180830-101350.gif)
 
-### UICollectionView
+### 四.UICollectionView
 
 **无限循环轮播两句代码即可调用:**
 
