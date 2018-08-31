@@ -16,8 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"UITableView的使用";
-    self.dataArray = @[@"GSCarsListVC"];
-    self.titleArray = @[@"汽车列表--带索引"];
+    self.dataArray = @[@"GSCarsListVC",@"GSQQFriendsListVC"];
+    self.titleArray = @[@"汽车列表--带索引",@"QQ好友列表"];
 }
-
 @end

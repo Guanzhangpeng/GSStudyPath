@@ -36,6 +36,11 @@
 		19970A922137A53000697EB1 /* ZPSegmentBarContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A8A2137A52F00697EB1 /* ZPSegmentBarContent.m */; };
 		19970A932137A53000697EB1 /* ZPSegmentBarTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A8E2137A53000697EB1 /* ZPSegmentBarTitle.m */; };
 		19970A962137A55F00697EB1 /* GSSegmentBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A952137A55F00697EB1 /* GSSegmentBarVC.m */; };
+		19970A9A2137C12C00697EB1 /* GSQQFriendsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A992137C12C00697EB1 /* GSQQFriendsListVC.m */; };
+		19970A9C2137C14200697EB1 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19970A9B2137C14200697EB1 /* friends.plist */; };
+		19970AA22137C20200697EB1 /* GSQQFriendModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970AA12137C20200697EB1 /* GSQQFriendModal.m */; };
+		19970AA52137C21100697EB1 /* GSQQFriendsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970AA42137C21100697EB1 /* GSQQFriendsGroup.m */; };
+		19970AA82137D46E00697EB1 /* GSQQHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970AA72137D46E00697EB1 /* GSQQHeaderView.m */; };
 		19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */; };
 		19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DA821301F6000BAAF2E /* GSSearchListVC.m */; };
 		19C08DAC21302DEC00BAAF2E /* JDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C08DAB21302DEC00BAAF2E /* JDHomeVC.m */; };
@@ -131,6 +136,15 @@
 		19970A8E2137A53000697EB1 /* ZPSegmentBarTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentBarTitle.m; sourceTree = "<group>"; };
 		19970A942137A55F00697EB1 /* GSSegmentBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSegmentBarVC.h; sourceTree = "<group>"; };
 		19970A952137A55F00697EB1 /* GSSegmentBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSSegmentBarVC.m; sourceTree = "<group>"; };
+		19970A982137C12C00697EB1 /* GSQQFriendsListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSQQFriendsListVC.h; sourceTree = "<group>"; };
+		19970A992137C12C00697EB1 /* GSQQFriendsListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSQQFriendsListVC.m; sourceTree = "<group>"; };
+		19970A9B2137C14200697EB1 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		19970AA02137C20200697EB1 /* GSQQFriendModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSQQFriendModal.h; sourceTree = "<group>"; };
+		19970AA12137C20200697EB1 /* GSQQFriendModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSQQFriendModal.m; sourceTree = "<group>"; };
+		19970AA32137C21100697EB1 /* GSQQFriendsGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSQQFriendsGroup.h; sourceTree = "<group>"; };
+		19970AA42137C21100697EB1 /* GSQQFriendsGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSQQFriendsGroup.m; sourceTree = "<group>"; };
+		19970AA62137D46E00697EB1 /* GSQQHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSQQHeaderView.h; sourceTree = "<group>"; };
+		19970AA72137D46E00697EB1 /* GSQQHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSQQHeaderView.m; sourceTree = "<group>"; };
 		19C08DA421301B9200BAAF2E /* GSBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSBaseTableViewController.h; sourceTree = "<group>"; };
 		19C08DA521301B9200BAAF2E /* GSBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSBaseTableViewController.m; sourceTree = "<group>"; };
 		19C08DA721301F6000BAAF2E /* GSSearchListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSearchListVC.h; sourceTree = "<group>"; };
@@ -253,6 +267,10 @@
 				1934C96C21354FAA0022ADB5 /* GSCarsGroup.m */,
 				1934C96E21354FC80022ADB5 /* GSCarModal.h */,
 				1934C96F21354FC80022ADB5 /* GSCarModal.m */,
+				19970AA02137C20200697EB1 /* GSQQFriendModal.h */,
+				19970AA12137C20200697EB1 /* GSQQFriendModal.m */,
+				19970AA32137C21100697EB1 /* GSQQFriendsGroup.h */,
+				19970AA42137C21100697EB1 /* GSQQFriendsGroup.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -260,6 +278,7 @@
 		1934C94E21354D940022ADB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				19970A972137C10D00697EB1 /* QQ好友列表 */,
 				1934C96521354F1B0022ADB5 /* 汽车列表-索引 */,
 				1934C94F21354DE40022ADB5 /* GSTableViewListVC.h */,
 				1934C95021354DE40022ADB5 /* GSTableViewListVC.m */,
@@ -341,6 +360,17 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		19970A972137C10D00697EB1 /* QQ好友列表 */ = {
+			isa = PBXGroup;
+			children = (
+				19970A982137C12C00697EB1 /* GSQQFriendsListVC.h */,
+				19970A992137C12C00697EB1 /* GSQQFriendsListVC.m */,
+				19970AA62137D46E00697EB1 /* GSQQHeaderView.h */,
+				19970AA72137D46E00697EB1 /* GSQQHeaderView.m */,
+			);
+			path = "QQ好友列表";
+			sourceTree = "<group>";
+		};
 		19C08DA321301B6E00BAAF2E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +436,7 @@
 		19D479CB212D6DC900944007 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				19970A9B2137C14200697EB1 /* friends.plist */,
 				1934C96921354F680022ADB5 /* cars_total.plist */,
 				1934C93A21353C1D0022ADB5 /* city.plist */,
 				1934C93921353C1D0022ADB5 /* citydata.plist */,
@@ -687,6 +718,7 @@
 				19D479BE212D6D7100944007 /* Assets.xcassets in Resources */,
 				19D479BC212D6D7000944007 /* Main.storyboard in Resources */,
 				1934C93C21353C1D0022ADB5 /* city.plist in Resources */,
+				19970A9C2137C14200697EB1 /* friends.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +779,7 @@
 				1934C96421354EA30022ADB5 /* GSWaterFlowVC.m in Sources */,
 				19D47A20212E938100944007 /* GSImageCell.m in Sources */,
 				1934C96D21354FAA0022ADB5 /* GSCarsGroup.m in Sources */,
+				19970AA52137C21100697EB1 /* GSQQFriendsGroup.m in Sources */,
 				19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */,
 				19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */,
 				19C08DB22130FD4B00BAAF2E /* GSJDButton.m in Sources */,
@@ -754,6 +787,7 @@
 				19970A922137A53000697EB1 /* ZPSegmentBarContent.m in Sources */,
 				19C08DBB21310A6300BAAF2E /* GSJDSearchBar.m in Sources */,
 				1934C96821354F400022ADB5 /* GSCarsListVC.m in Sources */,
+				19970AA22137C20200697EB1 /* GSQQFriendModal.m in Sources */,
 				19C08DBE21313C5D00BAAF2E /* GSJDSearchHistory.m in Sources */,
 				19970A8F2137A53000697EB1 /* ZPSegmentView.m in Sources */,
 				19D479D7212D7FE100944007 /* GSCountryModal.m in Sources */,
@@ -778,6 +812,8 @@
 				19D47A1C212E938100944007 /* GSDate.m in Sources */,
 				19D47A1E212E938100944007 /* GSShop.m in Sources */,
 				1934C9C5213674FB0022ADB5 /* GSAddressFirstHeaderView.m in Sources */,
+				19970A9A2137C12C00697EB1 /* GSQQFriendsListVC.m in Sources */,
+				19970AA82137D46E00697EB1 /* GSQQHeaderView.m in Sources */,
 				19D47A13212E938100944007 /* GSLineLayout.m in Sources */,
 				19C08DB52131079800BAAF2E /* GSJDSearchVC.m in Sources */,
 				19D479E3212E5D6400944007 /* GSNormalSearchVC.m in Sources */,

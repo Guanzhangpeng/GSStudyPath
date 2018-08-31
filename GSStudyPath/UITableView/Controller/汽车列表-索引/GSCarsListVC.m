@@ -46,6 +46,7 @@ static NSString *const cellID = @"cellID";
     GSCarsGroup *carsGroup = self.dataArray[indexPath.section];
     GSCarModal *carModal = carsGroup.cars[indexPath.row];
     cell.textLabel.text = carModal.name;
+    
     return cell;
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
