@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"UITableView的使用";
-    self.dataArray = @[@"GSCarsListVC",@"GSQQFriendsListVC"];
-    self.titleArray = @[@"汽车列表--带索引",@"QQ好友列表"];
+    self.dataArray = @[@"GSCarsListVC",@"GSQQFriendsListVC",@"GSExtensibleTableHeader"];
+    self.titleArray = @[@"汽车列表--带索引",@"QQ好友列表",@"可拉伸头部控件"];
 }
 @end

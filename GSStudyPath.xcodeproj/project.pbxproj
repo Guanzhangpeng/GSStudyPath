@@ -30,6 +30,8 @@
 		1934C9CB213677120022ADB5 /* GSAddressOtherHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CA213677120022ADB5 /* GSAddressOtherHeaderView.m */; };
 		1934C9CE21367C280022ADB5 /* GSAddressSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */; };
 		1934C9D32136CA5D0022ADB5 /* GSAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */; };
+		195925CD2147AFAC00017EDB /* GSCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 195925CC2147AFAC00017EDB /* GSCustomNavBar.m */; };
+		195925D02147B11700017EDB /* GSExtensibleTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 195925CF2147B11700017EDB /* GSExtensibleTableHeader.m */; };
 		19970A8F2137A53000697EB1 /* ZPSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A852137A52F00697EB1 /* ZPSegmentView.m */; };
 		19970A902137A53000697EB1 /* ZPSegmentBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A862137A52F00697EB1 /* ZPSegmentBarStyle.m */; };
 		19970A912137A53000697EB1 /* UIView+ZPSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A882137A52F00697EB1 /* UIView+ZPSegmentBar.m */; };
@@ -124,6 +126,10 @@
 		1934C9CC21367C280022ADB5 /* GSAddressSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAddressSectionCell.h; sourceTree = "<group>"; };
 		1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressSectionCell.m; sourceTree = "<group>"; };
 		1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAddressTableView.m; sourceTree = "<group>"; };
+		195925CB2147AFAC00017EDB /* GSCustomNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCustomNavBar.h; sourceTree = "<group>"; };
+		195925CC2147AFAC00017EDB /* GSCustomNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCustomNavBar.m; sourceTree = "<group>"; };
+		195925CE2147B11700017EDB /* GSExtensibleTableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSExtensibleTableHeader.h; sourceTree = "<group>"; };
+		195925CF2147B11700017EDB /* GSExtensibleTableHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSExtensibleTableHeader.m; sourceTree = "<group>"; };
 		19970A852137A52F00697EB1 /* ZPSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentView.m; sourceTree = "<group>"; };
 		19970A862137A52F00697EB1 /* ZPSegmentBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentBarStyle.m; sourceTree = "<group>"; };
 		19970A872137A52F00697EB1 /* ZPSegmentBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSegmentBarStyle.h; sourceTree = "<group>"; };
@@ -278,6 +284,7 @@
 		1934C94E21354D940022ADB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				195925CA2147AD7500017EDB /* 可拉伸头部控件 */,
 				19970A972137C10D00697EB1 /* QQ好友列表 */,
 				1934C96521354F1B0022ADB5 /* 汽车列表-索引 */,
 				1934C94F21354DE40022ADB5 /* GSTableViewListVC.h */,
@@ -331,6 +338,17 @@
 				1934C96721354F400022ADB5 /* GSCarsListVC.m */,
 			);
 			path = "汽车列表-索引";
+			sourceTree = "<group>";
+		};
+		195925CA2147AD7500017EDB /* 可拉伸头部控件 */ = {
+			isa = PBXGroup;
+			children = (
+				195925CB2147AFAC00017EDB /* GSCustomNavBar.h */,
+				195925CC2147AFAC00017EDB /* GSCustomNavBar.m */,
+				195925CE2147B11700017EDB /* GSExtensibleTableHeader.h */,
+				195925CF2147B11700017EDB /* GSExtensibleTableHeader.m */,
+			);
+			path = "可拉伸头部控件";
 			sourceTree = "<group>";
 		};
 		19970A832137A45F00697EB1 /* SegmentBar */ = {
@@ -779,6 +797,7 @@
 				1934C96421354EA30022ADB5 /* GSWaterFlowVC.m in Sources */,
 				19D47A20212E938100944007 /* GSImageCell.m in Sources */,
 				1934C96D21354FAA0022ADB5 /* GSCarsGroup.m in Sources */,
+				195925D02147B11700017EDB /* GSExtensibleTableHeader.m in Sources */,
 				19970AA52137C21100697EB1 /* GSQQFriendsGroup.m in Sources */,
 				19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */,
 				19C08DA621301B9200BAAF2E /* GSBaseTableViewController.m in Sources */,
@@ -806,6 +825,7 @@
 				1934C9CB213677120022ADB5 /* GSAddressOtherHeaderView.m in Sources */,
 				19D479E4212E5D6400944007 /* GSSearchResultVC.m in Sources */,
 				19C08DB82131089D00BAAF2E /* GSJDSearchMainVC.m in Sources */,
+				195925CD2147AFAC00017EDB /* GSCustomNavBar.m in Sources */,
 				1934C9CE21367C280022ADB5 /* GSAddressSectionCell.m in Sources */,
 				19D47A15212E938100944007 /* GSCircleLayout.m in Sources */,
 				19D47A2C212E96A600944007 /* UIView+Size.m in Sources */,
