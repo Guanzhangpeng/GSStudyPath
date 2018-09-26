@@ -82,6 +82,11 @@
 		19D47A2C212E96A600944007 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A2B212E96A600944007 /* UIView+Size.m */; };
 		19D47A30212E9A2900944007 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19D47A2F212E9A2900944007 /* 1.plist */; };
 		19D47A37212EA1B800944007 /* GSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D47A36212EA1B800944007 /* GSProxy.m */; };
+		19EE47C721536D6600E215D1 /* GSScrollViewListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE47C621536D6600E215D1 /* GSScrollViewListVC.m */; };
+		19EE47D22153A5E800E215D1 /* GSAlipayHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE47CF2153A5E800E215D1 /* GSAlipayHomeTableView.m */; };
+		19EE47D32153A5E800E215D1 /* GSAlipayHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE47D02153A5E800E215D1 /* GSAlipayHomeCell.m */; };
+		19EE47D42153A5E800E215D1 /* GSAlipayToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE47D12153A5E800E215D1 /* GSAlipayToolView.m */; };
+		19EE47D92153A60F00E215D1 /* GSAlipayHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EE47D72153A60F00E215D1 /* GSAlipayHomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -222,6 +227,16 @@
 		19D47A2F212E9A2900944007 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		19D47A35212EA1B800944007 /* GSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSProxy.h; sourceTree = "<group>"; };
 		19D47A36212EA1B800944007 /* GSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSProxy.m; sourceTree = "<group>"; };
+		19EE47C521536D6600E215D1 /* GSScrollViewListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSScrollViewListVC.h; sourceTree = "<group>"; };
+		19EE47C621536D6600E215D1 /* GSScrollViewListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSScrollViewListVC.m; sourceTree = "<group>"; };
+		19EE47CC2153A5E800E215D1 /* GSAlipayToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAlipayToolView.h; sourceTree = "<group>"; };
+		19EE47CD2153A5E800E215D1 /* GSAlipayHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAlipayHomeCell.h; sourceTree = "<group>"; };
+		19EE47CE2153A5E800E215D1 /* GSAlipayHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAlipayHomeTableView.h; sourceTree = "<group>"; };
+		19EE47CF2153A5E800E215D1 /* GSAlipayHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAlipayHomeTableView.m; sourceTree = "<group>"; };
+		19EE47D02153A5E800E215D1 /* GSAlipayHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAlipayHomeCell.m; sourceTree = "<group>"; };
+		19EE47D12153A5E800E215D1 /* GSAlipayToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAlipayToolView.m; sourceTree = "<group>"; };
+		19EE47D62153A60F00E215D1 /* GSAlipayHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSAlipayHomeVC.h; sourceTree = "<group>"; };
+		19EE47D72153A60F00E215D1 /* GSAlipayHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAlipayHomeVC.m; sourceTree = "<group>"; };
 		275B070A2CD2FD923A6DF44F /* Pods-GSStudyPath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSStudyPath.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath.debug.xcconfig"; sourceTree = "<group>"; };
 		2CDB8E5CD818334BF5CD6C51 /* Pods-GSStudyPath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSStudyPath.release.xcconfig"; path = "Pods/Target Support Files/Pods-GSStudyPath/Pods-GSStudyPath.release.xcconfig"; sourceTree = "<group>"; };
 		A9C537F39EA29690E137ED8E /* libPods-GSStudyPath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSStudyPath.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,8 +257,11 @@
 		1934C931213401630022ADB5 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				19EE47B82153682200E215D1 /* AliPayHome */,
 				19970A832137A45F00697EB1 /* SegmentBar */,
 				1934C932213403CF0022ADB5 /* 引导页 */,
+				19EE47C521536D6600E215D1 /* GSScrollViewListVC.h */,
+				19EE47C621536D6600E215D1 /* GSScrollViewListVC.m */,
 			);
 			path = UIScrollView;
 			sourceTree = "<group>";
@@ -648,6 +666,37 @@
 			path = Modal;
 			sourceTree = "<group>";
 		};
+		19EE47B82153682200E215D1 /* AliPayHome */ = {
+			isa = PBXGroup;
+			children = (
+				19EE47CB2153A5E800E215D1 /* View */,
+				19EE47D52153A60F00E215D1 /* Controller */,
+			);
+			path = AliPayHome;
+			sourceTree = "<group>";
+		};
+		19EE47CB2153A5E800E215D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19EE47CE2153A5E800E215D1 /* GSAlipayHomeTableView.h */,
+				19EE47CF2153A5E800E215D1 /* GSAlipayHomeTableView.m */,
+				19EE47CD2153A5E800E215D1 /* GSAlipayHomeCell.h */,
+				19EE47D02153A5E800E215D1 /* GSAlipayHomeCell.m */,
+				19EE47CC2153A5E800E215D1 /* GSAlipayToolView.h */,
+				19EE47D12153A5E800E215D1 /* GSAlipayToolView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19EE47D52153A60F00E215D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19EE47D62153A60F00E215D1 /* GSAlipayHomeVC.h */,
+				19EE47D72153A60F00E215D1 /* GSAlipayHomeVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		54381615838135A311533EA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -792,11 +841,14 @@
 				19C08DC12131508400BAAF2E /* GSNavigationController.m in Sources */,
 				19970A932137A53000697EB1 /* ZPSegmentBarTitle.m in Sources */,
 				19D47A21212E938100944007 /* GSDateHeaderView.m in Sources */,
+				19EE47D32153A5E800E215D1 /* GSAlipayHomeCell.m in Sources */,
+				19EE47D92153A60F00E215D1 /* GSAlipayHomeVC.m in Sources */,
 				1934C9452135416E0022ADB5 /* UIColor+Utils.m in Sources */,
 				19D479C4212D6D7100944007 /* main.m in Sources */,
 				1934C96421354EA30022ADB5 /* GSWaterFlowVC.m in Sources */,
 				19D47A20212E938100944007 /* GSImageCell.m in Sources */,
 				1934C96D21354FAA0022ADB5 /* GSCarsGroup.m in Sources */,
+				19EE47D42153A5E800E215D1 /* GSAlipayToolView.m in Sources */,
 				195925D02147B11700017EDB /* GSExtensibleTableHeader.m in Sources */,
 				19970AA52137C21100697EB1 /* GSQQFriendsGroup.m in Sources */,
 				19D47A16212E938100944007 /* GSWaterFlowLayout.m in Sources */,
@@ -805,6 +857,7 @@
 				19D47A37212EA1B800944007 /* GSProxy.m in Sources */,
 				19970A922137A53000697EB1 /* ZPSegmentBarContent.m in Sources */,
 				19C08DBB21310A6300BAAF2E /* GSJDSearchBar.m in Sources */,
+				19EE47C721536D6600E215D1 /* GSScrollViewListVC.m in Sources */,
 				1934C96821354F400022ADB5 /* GSCarsListVC.m in Sources */,
 				19970AA22137C20200697EB1 /* GSQQFriendModal.m in Sources */,
 				19C08DBE21313C5D00BAAF2E /* GSJDSearchHistory.m in Sources */,
@@ -841,6 +894,7 @@
 				19970A962137A55F00697EB1 /* GSSegmentBarVC.m in Sources */,
 				1934C93821353BEF0022ADB5 /* GSMTAddressMainVC.m in Sources */,
 				1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */,
+				19EE47D22153A5E800E215D1 /* GSAlipayHomeTableView.m in Sources */,
 				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
 				19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */,
 				1934C96221354EA30022ADB5 /* GSInfiniteVC.m in Sources */,

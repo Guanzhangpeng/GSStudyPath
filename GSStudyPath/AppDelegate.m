@@ -21,8 +21,7 @@
     self.window.rootViewController = [[GSTabBarController alloc] init];
     [self.window makeKeyAndVisible];
     
-    [GSIntroductionView sharedWithImages:@[@"user_guid1",@"user_guid2",@"user_guid3"]];
-    
+    [GSIntroductionView sharedWithImages:@[@"user_guid1",@"user_guid2",@"user_guid3"]];    
     return YES;
 }
 @end

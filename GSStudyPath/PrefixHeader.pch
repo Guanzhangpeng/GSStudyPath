@@ -14,6 +14,18 @@
 #define GSColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define SCREENSIZE [[UIScreen mainScreen] bounds].size
 
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define Height_StatusBar [[UIApplication sharedApplication] statusBarFrame].size.height
+
+#define Height_NavBar self.navigationController.navigationBar.frame.size.height
+
+#define Height_TopBar (Height_StatusBar+Height_NavBar)
+
+#define KIsiPhoneX ((int)((SCREEN_HEIGHT/SCREEN_WIDTH)*100) == 216)?YES:NO
+
 // iPhone X
 #define  GS_iPhoneX (SCREENSIZE.width == 375.f && SCREENSIZE.height == 812.f ? YES : NO)
 #endif /* PrefixHeader_pch */
