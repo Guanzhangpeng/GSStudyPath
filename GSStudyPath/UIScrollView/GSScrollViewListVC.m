@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"UIScrollView的使用";
-    self.dataArray = @[@"GSSegmentBarVC",@"GSAlipayHomeVC"];
-    self.titleArray = @[@"SegmentBar 效果",@"支付宝首页效果"];
+    self.dataArray = @[@"GSSegmentBarVC",@"GSAlipayHomeVC",@"GSAlipayHomeVC2"];
+    self.titleArray = @[@"SegmentBar 效果",@"支付宝首页效果",@"支付宝首页效果2"];
 }
 
 @end

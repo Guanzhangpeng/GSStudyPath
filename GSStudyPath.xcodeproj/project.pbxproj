@@ -30,6 +30,7 @@
 		1934C9CB213677120022ADB5 /* GSAddressOtherHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CA213677120022ADB5 /* GSAddressOtherHeaderView.m */; };
 		1934C9CE21367C280022ADB5 /* GSAddressSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */; };
 		1934C9D32136CA5D0022ADB5 /* GSAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */; };
+		1949152F215B613D001B731A /* GSAlipayHomeVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1949152E215B613D001B731A /* GSAlipayHomeVC2.m */; };
 		195925CD2147AFAC00017EDB /* GSCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 195925CC2147AFAC00017EDB /* GSCustomNavBar.m */; };
 		195925D02147B11700017EDB /* GSExtensibleTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 195925CF2147B11700017EDB /* GSExtensibleTableHeader.m */; };
 		19970A8F2137A53000697EB1 /* ZPSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19970A852137A52F00697EB1 /* ZPSegmentView.m */; };
@@ -131,6 +132,8 @@
 		1934C9CC21367C280022ADB5 /* GSAddressSectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAddressSectionCell.h; sourceTree = "<group>"; };
 		1934C9CD21367C280022ADB5 /* GSAddressSectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAddressSectionCell.m; sourceTree = "<group>"; };
 		1934C9D22136CA5C0022ADB5 /* GSAddressTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSAddressTableView.m; sourceTree = "<group>"; };
+		1949152D215B613D001B731A /* GSAlipayHomeVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAlipayHomeVC2.h; sourceTree = "<group>"; };
+		1949152E215B613D001B731A /* GSAlipayHomeVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAlipayHomeVC2.m; sourceTree = "<group>"; };
 		195925CB2147AFAC00017EDB /* GSCustomNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSCustomNavBar.h; sourceTree = "<group>"; };
 		195925CC2147AFAC00017EDB /* GSCustomNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCustomNavBar.m; sourceTree = "<group>"; };
 		195925CE2147B11700017EDB /* GSExtensibleTableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSExtensibleTableHeader.h; sourceTree = "<group>"; };
@@ -693,6 +696,8 @@
 			children = (
 				19EE47D62153A60F00E215D1 /* GSAlipayHomeVC.h */,
 				19EE47D72153A60F00E215D1 /* GSAlipayHomeVC.m */,
+				1949152D215B613D001B731A /* GSAlipayHomeVC2.h */,
+				1949152E215B613D001B731A /* GSAlipayHomeVC2.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -896,6 +901,7 @@
 				1934C935213403E40022ADB5 /* GSIntroductionView.m in Sources */,
 				19EE47D22153A5E800E215D1 /* GSAlipayHomeTableView.m in Sources */,
 				19D47A25212E938100944007 /* GSDateCell.m in Sources */,
+				1949152F215B613D001B731A /* GSAlipayHomeVC2.m in Sources */,
 				19C08DA921301F6000BAAF2E /* GSSearchListVC.m in Sources */,
 				1934C96221354EA30022ADB5 /* GSInfiniteVC.m in Sources */,
 				1934C96121354EA30022ADB5 /* GSDateVC.m in Sources */,

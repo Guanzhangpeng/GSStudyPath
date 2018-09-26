@@ -1,21 +1,21 @@
 //
-//  GSAlipayHomeVC.m
+//  GSAlipayHomeVC2.m
 //  GSStudyPath
 //
-//  Created by 管章鹏 on 2018/9/20.
+//  Created by 管章鹏 on 2018/9/26.
 //  Copyright © 2018年 管章鹏. All rights reserved.
 //
 #define ToolViewH    (140)
 #define GridViewH   (240)
-#import "GSAlipayHomeVC.h"
+#import "GSAlipayHomeVC2.h"
 #import "GSAlipayHomeTableView.h"
 #import "GSAlipayToolView.h"
 #import "MJRefresh.h"
-@interface GSAlipayHomeVC ()<UIScrollViewDelegate>{
+@interface GSAlipayHomeVC2 ()<UITableViewDelegate>{
     CGFloat _topOffsetY;
+    CGFloat _laseContentOffsetY;
 }
 
-@property (nonatomic, strong) UIScrollView *mainScrollView;
 @property (nonatomic, strong) GSAlipayHomeTableView *tableView;
 @property (nonatomic, strong) UIView *headView;
 @property (nonatomic, strong) UIView *headToolView;
@@ -24,11 +24,9 @@
 @property (nonatomic,strong) UIView *navView;
 @property (nonatomic,strong) UIView *mainNavView;
 @property (nonatomic,strong) UIView *coverNavView;
-
 @end
 
-@implementation GSAlipayHomeVC
-
+@implementation GSAlipayHomeVC2
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setHidden:YES];
@@ -39,64 +37,38 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    // Do any additional setup after loading the view.
     _topOffsetY = ToolViewH + GridViewH;
-    
-    [self.view addSubview:self.mainScrollView];
     [self.view addSubview:self.navView];
     [self.view addSubview:self.mainNavView];
     [self.view addSubview:self.coverNavView];
     
-    [self.mainScrollView addSubview:self.headView];
+    [self.view addSubview:self.tableView];
+    [self.tableView addSubview:self.headView];
     [self.headView addSubview:self.headToolView];
     [self.headView addSubview:self.headGridView];
-    [self.mainScrollView addSubview:self.tableView];
-    
-    __weak typeof(self) weakSelf = self;
-    self.tableView.contentSizeAction = ^(CGSize contentSize) {
-        [weakSelf updateContentSize:contentSize];
-    };
-    _mainScrollView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
-}
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [self updateContentSize:self.tableView.contentSize];
-}
--(void)updateContentSize:(CGSize)size{
-    CGSize contentSize = size;
-    contentSize.height = size.height + _topOffsetY;
-    self.mainScrollView.contentSize = contentSize;
-    
-    CGRect newFrame = self.tableView.frame;
-    newFrame.size.height = size.height;
-    self.tableView.frame = newFrame;
 }
 #pragma mark -- scrollView delegate
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    _laseContentOffsetY = scrollView.contentOffset.y;
+}
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offsetY = scrollView.contentOffset.y;
     
-    if (offsetY <= 0) {
-        self.headView.frame = CGRectMake(0.f, offsetY, SCREENSIZE.width, _topOffsetY) ;
-        self.tableView.frame = CGRectMake(0.f, offsetY + _topOffsetY, SCREENSIZE.width, self.tableView.gs_height);
-        self.tableView.contentOffsetY = offsetY;
-        
+    if (offsetY <= -_topOffsetY) {
+        self.headView.frame = CGRectMake(0.f, offsetY, SCREEN_WIDTH, _topOffsetY);
         
         CGRect newFrame = self.headToolView.frame;
         newFrame.origin.y = 0;
         self.headToolView.frame = newFrame;
-        
-        
-    }else  if(offsetY < ToolViewH && offsetY > 0) {
+    }else  if(offsetY < -GridViewH ) {
+        offsetY = _topOffsetY + offsetY;
         CGRect newFrame = self.headToolView.frame;
         newFrame.origin.y = offsetY/2;
         self.headToolView.frame = newFrame;
-        NSLog(@"offsetY : %f",offsetY);
-        
         //处理透明度
         CGFloat alpha = (1 - offsetY/ToolViewH*1.5 ) > 0 ? (1 - offsetY/ToolViewH*1.5 ) : 0;
-        NSLog(@"alpha: %f",alpha);
         self.headToolView.alpha = alpha;
         if (alpha > 0.5) {
             CGFloat newAlpha = alpha * 2 - 1;
@@ -109,50 +81,68 @@
         }
     }
 }
-
-
--(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
-    CGFloat offsetY = scrollView.contentOffset.y;
-    if (offsetY < -65) {
-        [self.tableView.mj_header beginRefreshing];
-    }else if(offsetY >0 && offsetY < ToolViewH){
-        [self toolViewAnimateWithOffsetY:offsetY];
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    CGFloat tableViewOffsetY = scrollView.contentOffset.y;
+    
+    if (tableViewOffsetY < -(GridViewH + ToolViewH) || tableViewOffsetY > -GridViewH) {
+        return;
+    }
+    
+    if (tableViewOffsetY > _laseContentOffsetY) {
+        // 向上滑
+        if (tableViewOffsetY > -(GridViewH + ToolViewH) + 30) {
+            [self.tableView setContentOffset:CGPointMake(0, -GridViewH) animated:YES];
+        } else {
+            [self.tableView setContentOffset:CGPointMake(0, -(GridViewH + ToolViewH)) animated:YES];
+        }
+    } else {
+        // 向下滑
+        if (tableViewOffsetY < -GridViewH - 30) {
+            [self.tableView setContentOffset:CGPointMake(0, -(GridViewH + ToolViewH)) animated:YES];
+        } else {
+            [self.tableView setContentOffset:CGPointMake(0, -GridViewH) animated:YES];
+        }
     }
 }
-- (void)toolViewAnimateWithOffsetY:(CGFloat)offsetY{
-    if (offsetY >= ToolViewH / 2) {
-        [self.mainScrollView setContentOffset:CGPointMake(0.f, ToolViewH) animated:YES];
-    }else{
-        [self.mainScrollView setContentOffset:CGPointMake(0.f, 0.f) animated:YES];
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGFloat tableViewOffsetY = scrollView.contentOffset.y;
+    
+    if (tableViewOffsetY < -(GridViewH + ToolViewH) || tableViewOffsetY > -GridViewH) {
+        return;
+    }
+    
+    if (tableViewOffsetY > _laseContentOffsetY) {
+        // 向上滑
+        if (tableViewOffsetY > -(GridViewH + ToolViewH) + 20) {
+            [self.tableView setContentOffset:CGPointMake(0, -GridViewH) animated:YES];
+        } else {
+            [self.tableView setContentOffset:CGPointMake(0, -(GridViewH + ToolViewH)) animated:YES];
+        }
+    } else {
+        // 向下滑
+        if (tableViewOffsetY < -GridViewH - 20) {
+            [self.tableView setContentOffset:CGPointMake(0, -(GridViewH + ToolViewH)) animated:YES];
+        } else {
+            [self.tableView setContentOffset:CGPointMake(0, -GridViewH) animated:YES];
+        }
     }
 }
--(void)loadMoreData{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.tableView loadMoreData];
-         [self.mainScrollView.mj_footer endRefreshing];
-    });
-}
+
+
 #pragma mark -- getter method
--(UIScrollView *)mainScrollView{
-    if (!_mainScrollView) {
-        _mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0.f, 64.f, SCREENSIZE.width, SCREENSIZE.height - 64.f)];
-        _mainScrollView.delegate = self;
-        _mainScrollView.scrollIndicatorInsets = UIEdgeInsetsMake(_topOffsetY, 0.f, 0.f, 0.f);
-        
-    }
-    return _mainScrollView;
-}
 -(GSAlipayHomeTableView *)tableView{
     if (!_tableView) {
-        _tableView = [[GSAlipayHomeTableView alloc] initWithFrame:CGRectMake(0.f, _topOffsetY, SCREENSIZE.width, SCREENSIZE.height  - _topOffsetY) style:UITableViewStylePlain];
-        _tableView.scrollEnabled = NO;
-        
+        _tableView = [[GSAlipayHomeTableView alloc] initWithFrame:CGRectMake(0.f, Height_TopBar, SCREEN_WIDTH, SCREEN_HEIGHT - Height_TopBar) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.contentInset = UIEdgeInsetsMake((ToolViewH + GridViewH), 0, 0, 0);
+        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake((GridViewH + GridViewH), 0, 0, 0);
     }
     return _tableView;
 }
 -(UIView *)headView{
     if (!_headView) {
-        _headView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREENSIZE.width, _topOffsetY)];
+        _headView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -_topOffsetY, SCREENSIZE.width, _topOffsetY)];
         _headView.backgroundColor = [UIColor colorWithRed:27 / 255.0 green:130 / 255.0 blue:209 / 255.0 alpha:1];
     }
     return _headView;
@@ -256,8 +246,6 @@
     }
     return _headGridView;
 }
-
-
 - (UIView *)navView{
     if (!_navView) {
         CGFloat yCoordinate = 64.f;
@@ -299,21 +287,20 @@
         
         GSAlipayToolView *coverNavView = [[GSAlipayToolView alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREENSIZE.width * 2/3, yCoordinate) Style:style];
         coverNavView.toolItems = @[
-                               @{
-                                   @"image":@"pay_mini",
-                                   
-                                   },
-                               @{
-                                   @"image":@"scan_mini",
-                                   },
-                               @{
-                                   @"image":@"camera_mini",
-                                   }
-                               ];
+                                   @{
+                                       @"image":@"pay_mini",
+                                       
+                                       },
+                                   @{
+                                       @"image":@"scan_mini",
+                                       },
+                                   @{
+                                       @"image":@"camera_mini",
+                                       }
+                                   ];
         _coverNavView = coverNavView;
         _coverNavView.alpha = 0.0001f;
     }
     return _coverNavView;
 }
-
 @end

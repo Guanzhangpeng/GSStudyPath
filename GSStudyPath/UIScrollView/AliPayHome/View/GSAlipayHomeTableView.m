@@ -19,8 +19,7 @@ static NSString *const cellID = @"AlipayHomeCell";
 -(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style{
     if (self = [super initWithFrame:frame style:style]) {
         _numberRows = 5;
-        self.dataSource = self;
-        self.scrollEnabled = NO;
+        self.dataSource = self;        
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self registerClass:[GSAlipayHomeCell class] forCellReuseIdentifier:cellID];
         self.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
