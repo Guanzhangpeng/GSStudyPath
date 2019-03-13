@@ -138,6 +138,7 @@
 		195925CC2147AFAC00017EDB /* GSCustomNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSCustomNavBar.m; sourceTree = "<group>"; };
 		195925CE2147B11700017EDB /* GSExtensibleTableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSExtensibleTableHeader.h; sourceTree = "<group>"; };
 		195925CF2147B11700017EDB /* GSExtensibleTableHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSExtensibleTableHeader.m; sourceTree = "<group>"; };
+		1980425C22390A98000062FD /* GSStudyPath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GSStudyPath.entitlements; sourceTree = "<group>"; };
 		19970A852137A52F00697EB1 /* ZPSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentView.m; sourceTree = "<group>"; };
 		19970A862137A52F00697EB1 /* ZPSegmentBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSegmentBarStyle.m; sourceTree = "<group>"; };
 		19970A872137A52F00697EB1 /* ZPSegmentBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSegmentBarStyle.h; sourceTree = "<group>"; };
@@ -453,6 +454,7 @@
 		19D479B3212D6D7000944007 /* GSStudyPath */ = {
 			isa = PBXGroup;
 			children = (
+				1980425C22390A98000062FD /* GSStudyPath.entitlements */,
 				19D47A28212E969400944007 /* Tools */,
 				19C08DC52131514200BAAF2E /* Main */,
 				1934C931213401630022ADB5 /* UIScrollView */,
@@ -752,6 +754,14 @@
 				TargetAttributes = {
 					19D479B0212D6D7000944007 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1047,7 +1057,9 @@
 			baseConfigurationReference = 275B070A2CD2FD923A6DF44F /* Pods-GSStudyPath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GSStudyPath/GSStudyPath.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92LUBU67XF;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GSStudyPath/PrefixHeader.pch";
 				INFOPLIST_FILE = GSStudyPath/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1055,7 +1067,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = stw.GSStudyPath;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stw.gzp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1066,7 +1078,9 @@
 			baseConfigurationReference = 2CDB8E5CD818334BF5CD6C51 /* Pods-GSStudyPath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GSStudyPath/GSStudyPath.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92LUBU67XF;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GSStudyPath/PrefixHeader.pch";
 				INFOPLIST_FILE = GSStudyPath/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1074,7 +1088,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = stw.GSStudyPath;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stw.gzp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

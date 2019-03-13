@@ -5,5 +5,5 @@ pod 'MJExtension'
 pod 'MJRefresh'
 pod 'SDWebImage'
 pod 'Masonry'
-
+pod 'JPush'
 end
