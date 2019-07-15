@@ -9,6 +9,17 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import "UIView+Size.h"
+
+#define KIsiPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+#define UPHEIGHT (KIsiPhoneX ? (88.0f) : (64.0f))
+#define UI_TAB_BAR_HEIGHT (KIsiPhoneX ? (83.0f) : (46.0f))
+#define KtabHeight (KIsiPhoneX ? (34.0f) : (0.0f))
+
 // 随机色
 #define GSRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 #define GSColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]

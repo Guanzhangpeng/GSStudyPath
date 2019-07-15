@@ -48,7 +48,10 @@
     self.window.rootViewController = [[GSTabBarController alloc] init];
     [self.window makeKeyAndVisible];
     
-    [GSIntroductionView sharedWithImages:@[@"user_guid1",@"user_guid2",@"user_guid3"]];    
+//    [GSIntroductionView sharedWithImages:@[@"user_guid1",@"user_guid2",@"user_guid3"]];
+    GSIntroductionView *launchView = [GSIntroductionView sharedWithStoryboard:@"Main" images:@[@"user_guid1",@"user_guid2",@"user_guid3"] buttonImage:nil buttonFrame:self.window.frame];
+    launchView.currentColor = [UIColor clearColor];
+    launchView.nomalColor = [UIColor clearColor];
     return YES;
 }
 - (void)application:(UIApplication *)application

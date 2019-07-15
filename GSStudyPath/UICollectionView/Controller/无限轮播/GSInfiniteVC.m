@@ -9,6 +9,7 @@
 
 #import "GSInfiniteVC.h"
 #import "GSInfiniteView.h"
+#import "GPView.h"
 @implementation GSInfiniteVC
 #pragma mark 系统回调方法
 - (void)viewDidLoad {
@@ -22,5 +23,10 @@
         NSLog(@"点击了第 %ld 张图片",index);
     };
     [self.view addSubview:infiniteView];
+    
+    GPView *gpview = [[GPView alloc] initWithFrame:CGRectMake(0.0, CGRectGetMaxY(infiniteView.frame)-30, SCREEN_WIDTH, 300)];
+    gpview.backgroundColor = [UIColor clearColor];
+    
+    [self.view addSubview:gpview];
 }
 @end
